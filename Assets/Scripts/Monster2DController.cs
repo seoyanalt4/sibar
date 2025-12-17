@@ -72,11 +72,11 @@ public class Monster2DController : MonoBehaviour
 
     void Start()
     {
-        originPos = transform.position;
+        /*originPos = transform.position;
         waitTimer = waitTime;
 
         // 최초 1회 플레이어 찾기
-        TryFindPlayer();
+        TryFindPlayer();*/
 
         CachePlayerShell();
         ApplyFormByPlayerShell(force:true);
@@ -86,10 +86,10 @@ public class Monster2DController : MonoBehaviour
     {
         ApplyFormByPlayerShell();
 
-        /*if (player != null && !player.CompareTag("Player"))
+        if (player != null && !player.CompareTag("Player"))
         {
             player = null;
-        }*/
+        }
         
         // 공격 후 멈춤 시간 동안은 AI 정지
         if (isAttacked) return;
@@ -152,8 +152,8 @@ public class Monster2DController : MonoBehaviour
         void CachePlayerShell()
         {
             // if (player == null) TryFindPlayer();
-            if (player != null)
-            playerShell = FindFirstObjectByType<PlayerShell>();
+            if (playerShell == null)
+                playerShell = FindFirstObjectByType<PlayerShell>();
         }
 
     void ApplyFormByPlayerShell(bool force = false)
@@ -249,6 +249,8 @@ public class Monster2DController : MonoBehaviour
             lastAttackTime = Time.time;
         }
     }
+
+
 
     void AttackPlayer()
     {
