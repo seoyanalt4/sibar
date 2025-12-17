@@ -2,19 +2,26 @@ using UnityEngine;
 
 public class PlayerShell : MonoBehaviour
 {
-    [Header("≤Æµ•±‚ ¬¯øÎ ø©∫Œ")]
+    [Header("ÍªçÎç∞Í∏∞ Ï∞©Ïö© Ïó¨Î∂Ä")]
     public bool hasShell = true;
 
-    [Header("≤Æµ•±‚ µÂ∂¯ «¡∏Æ∆’")]
+    [Header("ÍªçÎç∞Í∏∞ ÎìúÎûç ÌîÑÎ¶¨Ìåπ")]
     public GameObject shellPrefab;
 
-    [Header("¡›±‚ ∞≈∏Æ")]
+    [Header("Ï§çÍ∏∞ Í±∞Î¶¨")]
     public float pickup = 1.0f;
 
-    [Header("∑π¿ÃæÓ ¿Ã∏ß")]
+    [Header("Î†àÏù¥Ïñ¥ Ïù¥Î¶Ñ")]
     public string playerLayerName = "Player";
     public string obstacleLayerName = "Obstacle";
     public LayerMask shellPickupMask;
+
+    [Header("ÌÉúÍ∑∏ ÏÑ§Ï†ï")]
+    public string playerTagName = "Player";
+    public string originTagName = "Crab";
+
+    
+    public bool startCrabTag = true;
 
     private int playerLayer;
     private int obstacleLayer;
@@ -27,12 +34,24 @@ public class PlayerShell : MonoBehaviour
         obstacleLayer = LayerMask.NameToLayer(obstacleLayerName);
 
         ApplyShellCollision();
+        gameObject.tag = startCrabTag ? originTagName : playerTagName;
+    }
+
+    public void SetPlayerTag(bool asplayer)
+    {
+        gameObject.tag = asplayer ? playerTagName : originTagName;
     }
 
     public void SetShell(bool wearing)
     {
         hasShell = wearing;
         ApplyShellCollision();
+        ApplyPlayerTag();
+    }
+
+    void ApplyPlayerTag()
+    {
+        gameObject.tag = hasShell ? playerTagName : originTagName;
     }
 
     void ApplyShellCollision()
@@ -51,6 +70,8 @@ public class PlayerShell : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
+            
+
             if (hasShell)
                 DropShell();
             else
@@ -64,8 +85,7 @@ public class PlayerShell : MonoBehaviour
 
         hasShell = false;
         ApplyShellCollision();
-
-        if (shellPrefab == null) return;
+        SetPlayerTag(true);
 
         droppedShell = Instantiate(shellPrefab, transform.position, Quaternion.identity);
     }
@@ -77,6 +97,8 @@ public class PlayerShell : MonoBehaviour
 
         hasShell = true;
         ApplyShellCollision();
+        
+        SetPlayerTag(false);
 
         if (droppedShell != null)
             Destroy(droppedShell);
