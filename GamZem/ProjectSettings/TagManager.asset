@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Wall
   - Obstacle
+  - Effect
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Effect
   - Water
   - UI
   - Player
@@ -49,11 +50,17 @@ TagManager:
   - name: Wall
     uniqueID: 1804855821
     locked: 0
+  - name: Effect
+    uniqueID: 3236219147
+    locked: 0
   - name: Player
     uniqueID: 3206485523
     locked: 0
   - name: Obstacle
     uniqueID: 484569537
+    locked: 0
+  - name: UI
+    uniqueID: 3842751531
     locked: 0
   m_RenderingLayers:
   - Default
