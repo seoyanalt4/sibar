@@ -35,6 +35,24 @@ public class Monster2DController : MonoBehaviour
     [Header("--- 참조 ---")]
     public Transform player; // 인스펙터로 넣어도 되고 자동 탐색됨
 
+
+    [Header("--- 변신(플레이어 hasShell 연동) ---")]
+    public bool transformByPlayerShell = true;
+
+    public SpriteRenderer targetRenderer;   // 몬스터 외형 바꿀 대상
+    public Animator targetAnimator;
+
+    [Header("평상시(얌전)")]
+    public Sprite calmSprite;
+    public RuntimeAnimatorController calmController;
+
+    [Header("괴물(변신)")]
+    public Sprite monsterSprite;
+    public RuntimeAnimatorController monsterController;
+
+    PlayerShell playerShell;     // 플레이어의 PlayerShell 캐싱
+    bool lastPlayerHasShell;
+
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     Vector2 originPos;
@@ -47,6 +65,9 @@ public class Monster2DController : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+
+        if (targetRenderer == null) targetRenderer = spriteRenderer;
+        if (targetAnimator == null) targetAnimator = GetComponent<Animator>();
     }
 
     void Start()
@@ -56,14 +77,19 @@ public class Monster2DController : MonoBehaviour
 
         // 최초 1회 플레이어 찾기
         TryFindPlayer();
+
+        CachePlayerShell();
+        ApplyFormByPlayerShell(force:true);
     }
 
     void Update()
     {
-        if (player != null && !player.CompareTag("Player"))
+        ApplyFormByPlayerShell();
+
+        /*if (player != null && !player.CompareTag("Player"))
         {
             player = null;
-        }
+        }*/
         
         // 공격 후 멈춤 시간 동안은 AI 정지
         if (isAttacked) return;
@@ -121,6 +147,63 @@ public class Monster2DController : MonoBehaviour
         rb.MovePosition(newPos);
 
         hasMoveTarget = false; // 매 프레임 목표 다시 받는 구조
+    }
+
+        void CachePlayerShell()
+        {
+            // if (player == null) TryFindPlayer();
+            if (player != null)
+            playerShell = FindFirstObjectByType<PlayerShell>();
+        }
+
+    void ApplyFormByPlayerShell(bool force = false)
+    {
+        if (!transformByPlayerShell) return;
+
+        if (playerShell == null) CachePlayerShell();
+        if (playerShell == null) return;
+
+        bool pHasShell = playerShell.hasShell;
+
+        if (!force && pHasShell == lastPlayerHasShell) return;
+        lastPlayerHasShell = pHasShell;
+
+        
+        Sprite nextSprite = pHasShell ? calmSprite : monsterSprite;
+        RuntimeAnimatorController nextCtrl = pHasShell ? calmController : monsterController;
+
+        
+        int prevHash = 0;
+        float prevTime = 0f;
+        bool canCarry = (targetAnimator != null &&
+                         targetAnimator.isActiveAndEnabled &&
+                         targetAnimator.runtimeAnimatorController != null);
+
+        if (canCarry)
+        {
+            var st = targetAnimator.GetCurrentAnimatorStateInfo(0);
+            prevHash = st.fullPathHash;
+            prevTime = st.normalizedTime;
+        }
+
+        if (targetRenderer != null && nextSprite != null)
+            targetRenderer.sprite = nextSprite;
+
+        if (targetAnimator != null)
+        {
+            targetAnimator.runtimeAnimatorController = nextCtrl;
+
+            if (nextCtrl != null && canCarry && targetAnimator.HasState(0, prevHash))
+            {
+                targetAnimator.Play(prevHash, 0, prevTime);
+                targetAnimator.Update(0f);
+            }
+            else if (nextCtrl != null)
+            {
+                targetAnimator.Rebind();
+                targetAnimator.Update(0f);
+            }
+        }
     }
 
 
