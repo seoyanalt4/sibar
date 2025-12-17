@@ -4,40 +4,50 @@ public class Monster2DController : MonoBehaviour
 {
     public enum State { Idle, Patrol, Chase, Attack, Returning }
 
+    private Rigidbody2D rb;
+
     [Header("--- 상태 및 속도 ---")]
     public State currentState = State.Patrol;
     public float patrolSpeed = 2f;
     public float chaseSpeed = 4.5f;
-    public float detectionRange = 5f;
+
+    [Header("--- 범위 및 시야 설정 ---")]
+    public float detectionRange = 5f;   // 감지 범위
+    public float attackRange = 1.2f;      // 공격 범위
+    public LayerMask obstacleLayer;     // 장애물 레이어 (벽 등)
 
     [Header("--- 공격 설정 ---")]
-    public float attackRange = 1.2f;    // 공격 사거리
-    public int attackDamage = 10;      // 공격 데미지
-    public float attackCooldown = 1.5f; // 공격 간격 (초)
+    public int attackDamage = 10;
+    public float attackCooldown = 1.5f;
     private float lastAttackTime;
 
-    [Header("--- 순찰 및 대기 ---")]
-    public Transform[] patrolPoints; // 순찰 지점들
-    public float waitTime = 1.5f; // 순찰 지점에서 머무르는 시간
-    private int pointIndex = 0; // 몇번째 지점으로 가야하는지 알려주는 것
-    private float waitTimer; // 한 지점에서 기다리는 시간 계산 -> 그 후 다시 다음 지역 이동
+    [Header("--- 순찰 설정 ---")]
+    public Transform[] patrolPoints;
+    public float waitTime = 1.5f;
+    private int pointIndex = 0;
+    private float waitTimer;
 
     [Header("--- 참조 ---")]
-    public Transform player; // 플레이어의 위치 정보
-    private SpriteRenderer spriteRenderer; // 몬스터의 이미지 관리
-    private Vector2 originPos; // 몬스터가 처음 배치된 위치 기억
+    public Transform player;
+    private SpriteRenderer spriteRenderer;
+    private Vector2 originPos;
 
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>(); // Rigidbody2D 가져오기
     }
 
     void Start()
     {
         originPos = transform.position;
         waitTimer = waitTime;
+
         if (player == null)
-            player = GameObject.FindGameObjectWithTag("Player").transform; // 실수로 Player 안집어 넣었으면 자동으로 찾기
+        {
+            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            if (playerObj != null) player = playerObj.transform;
+        }
     }
 
     void Update()
@@ -46,22 +56,38 @@ public class Monster2DController : MonoBehaviour
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        // --- 상태 결정 로직 ---
-        if (distanceToPlayer <= attackRange)
+        // 상태 설정 로직
+        bool canSeePlayer = false;
+
+        // 거리가 범위 안일 때만 시야 체크(Raycast)를 실행하여 최적화
+        if (distanceToPlayer <= detectionRange)
         {
-            currentState = State.Attack;
-        }
-        else if (distanceToPlayer <= detectionRange)
-        {
-            currentState = State.Chase;
-        }
-        else if (currentState == State.Chase || currentState == State.Attack)
-        {
-            if (distanceToPlayer > detectionRange)
-                currentState = State.Returning;
+            canSeePlayer = HasLineOfSight();
         }
 
-        // --- 상태별 행동 실행 ---
+        if (canSeePlayer)
+        {
+            if (distanceToPlayer <= attackRange)
+            {
+                if (currentState != State.Attack) Debug.Log("<color=red>공격 상태 진입!</color>");
+                currentState = State.Attack;
+            }
+            else
+            {
+                currentState = State.Chase;
+            }
+        }
+        else
+        {
+            // 플레이어가 범위를 벗어났거나 장애물 뒤에 숨었을 때
+            if (currentState == State.Chase || currentState == State.Attack)
+            {
+                Debug.Log("<color=yellow>타겟 상실:</color> 복귀합니다.");
+                currentState = State.Returning;
+            }
+        }
+
+        // 상태별 행동
         switch (currentState)
         {
             case State.Patrol: HandlePatrol(); break;
@@ -71,17 +97,28 @@ public class Monster2DController : MonoBehaviour
         }
     }
 
+    // 시야 체크 (Raycast)
+    bool HasLineOfSight()
+    {
+        Vector2 direction = (player.position - transform.position).normalized;
+        float distance = Vector2.Distance(transform.position, player.position);
+
+        // 몬스터 위치에서 플레이어 방향으로 레이저를 쏩니다.
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, obstacleLayer);
+
+        // 레이저가 장애물 레이어에 걸리는 게 없다면 플레이어가 보이는 것
+        if (hit.collider == null)
+        {
+            Debug.Log("플레이어가 보입니다.");
+        }
+        return hit.collider == null;
+    }
+
     void HandleAttack()
     {
-        // 공격 상태에 진입하면 이동을 멈춤
-        // 처음 공격 상태가 되었을 때 한 번만 출력하고 싶다면 아래와 같이 작성
-        Debug.Log("<color=red>[공격]</color> 플레이어 감지! 몬스터가 이동을 멈추고 공격을 시작합니다.");
+        // 공격 중 이동 중지 및 방향 전환
+        FlipSprite(player.position);
 
-        // 몬스터가 플레이어를 바라보게 설정 (이미지 반전)
-        if (player.position.x < transform.position.x) spriteRenderer.flipX = true;
-        else if (player.position.x > transform.position.x) spriteRenderer.flipX = false;
-
-        // 공격 쿨타임 체크 후 공격 실행
         if (Time.time >= lastAttackTime + attackCooldown)
         {
             AttackPlayer();
@@ -91,25 +128,21 @@ public class Monster2DController : MonoBehaviour
 
     void AttackPlayer()
     {
-        Debug.Log("몬스터가 플레이어를 공격합니다!");
-
-        // 플레이어의 Health 스크립트를 가져와 데미지 입힘
-        // PlayerHealth health = player.GetComponent<PlayerHealth>();
+        //PlayerHealth health = player.GetComponent<PlayerHealth>();
         //if (health != null)
         {
-           // health.TakeDamage(attackDamage); // health에 있는 TakeDamage실행
+        //    health.TakeDamage(attackDamage);
+        //    Debug.Log("플레이어에게 데미지를 입혔습니다!");
         }
-
-        // 여기에 공격 애니메이션 실행 코드 추가:
-        // GetComponent<Animator>().SetTrigger("Attack");
     }
 
     void HandlePatrol()
     {
-        if (patrolPoints.Length == 0) return; // 순찰 루트 없으면 그냥 가만히 있어
+        if (patrolPoints.Length == 0) return;
         Vector2 target = patrolPoints[pointIndex].position;
         MoveTowards(target, patrolSpeed);
-        if (Vector2.Distance(transform.position, target) < 0.1f) // 지점이랑 몬스터거리가 0.1 안이야?
+
+        if (Vector2.Distance(transform.position, target) < 0.1f)
         {
             waitTimer -= Time.deltaTime;
             if (waitTimer <= 0)
@@ -136,7 +169,16 @@ public class Monster2DController : MonoBehaviour
 
     void MoveTowards(Vector2 target, float speed)
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        // transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime); 움직이는 방식 변경
+        Vector2 currentPos = rb.position;
+        Vector2 newPos = Vector2.MoveTowards(currentPos, target, speed * Time.deltaTime);
+        rb.MovePosition(newPos); // 벽에 부딪히면 멈추게 함
+
+        FlipSprite(target);
+    }
+
+    void FlipSprite(Vector2 target)
+    {
         if (target.x < transform.position.x) spriteRenderer.flipX = true;
         else if (target.x > transform.position.x) spriteRenderer.flipX = false;
     }
@@ -149,5 +191,12 @@ public class Monster2DController : MonoBehaviour
         // 공격 범위 (노란색)
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        // 시야 레이저 시각화 (플레이어가 있을 때만)
+        if (player != null)
+        {
+            Gizmos.color = HasLineOfSight() ? Color.green : Color.grey;
+            Gizmos.DrawLine(transform.position, player.position);
+        }
     }
 }
