@@ -2,50 +2,129 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    [Header("ÀÌµ¿ ¼³Á¤")]
+    [Header("í”Œë ˆì´ì–´ ì´ë™ì†ë„")]
     public float moveSpeed = 5f;
+
+    [Header("í”Œë ˆì´ì–´ ì‚°ì†Œ ìˆ˜ì¹˜")]
+    public float maxAir = 100f;
+    public float currentAir;
+    public float airDecreasePerSecond = 1f;
+    public float hitDamage = 10f;
+
+    [Header("ë¬´ì  íŒì •")]
+    public float hitInvincibleTime = 0.5f;
+    bool isInvincible = false;
+
+    bool isTouchingMonster = false;
+
+    int mobTouchCount = 0;
+
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Vector2 moveInput;
 
+    void Start()
+    {
+        currentAir = maxAir;
+    }
+
+    public void TakeDamage(float amount)
+    {
+        if(isInvincible) return;
+
+        currentAir -= amount;
+        currentAir = Mathf.Clamp(currentAir, 0, maxAir);
+
+        if(currentAir <= 0)
+        {
+            Die();
+        }
+
+        StartCoroutine(hitRoutine());
+    }
+
+    System.Collections.IEnumerator hitRoutine()
+    {
+        Debug.Log($"ë°ë¯¸ì§€ ë‹³ìŒ. í˜„ì¬ ì²´ë ¥ = {currentAir}");
+        isInvincible = true;
+        yield return new WaitForSeconds(hitInvincibleTime);
+        isInvincible = false;
+    }
+
     void Awake()
     {
-        // ÄÄÆ÷³ÍÆ® ÂüÁ¶
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // Rigidbody2D ¼³Á¤ ÀÚµ¿È­
+        // Rigidbody2D ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½È­
         if (rb != null)
         {
-            rb.gravityScale = 0f; // 2D È¾½ºÅ©·ÑÀÌ ¾Æ´Ï¸é Áß·Â 0
-            rb.freezeRotation = true; // ¹°¸® Ãæµ¹·Î Ä³¸¯ÅÍ°¡ È¸ÀüÇÏ´Â °Í ¹æÁö
+            rb.gravityScale = 0f; // 2D È¾ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¸ï¿½ ï¿½ß·ï¿½ 0
+            rb.freezeRotation = true; // ï¿½ï¿½ï¿½ï¿½ ï¿½æµ¹ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½Í°ï¿½ È¸ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         }
     }
 
     void Update()
     {
-        // 1. Å°º¸µå ÀÔ·Â ¹Ş±â (W,A,S,D ¶Ç´Â È­»ìÇ¥)
+        HandleAir();
+
+        // 1. Å°ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ ï¿½Ş±ï¿½ (W,A,S,D ï¿½Ç´ï¿½ È­ï¿½ï¿½Ç¥)
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
 
-        // ÀÔ·Â°ª Á¤±ÔÈ­ (´ë°¢¼± ÀÌµ¿ ½Ã »¡¶óÁö´Â °Í ¹æÁö)
+        // ï¿½Ô·Â°ï¿½ ï¿½ï¿½ï¿½ï¿½È­ (ï¿½ë°¢ï¿½ï¿½ ï¿½Ìµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
         moveInput = moveInput.normalized;
 
-        // 2. ÀÌµ¿ ¹æÇâ¿¡ µû¶ó Ä³¸¯ÅÍ ÀÌ¹ÌÁö ¹İÀü
+        // 2. ï¿½Ìµï¿½ ï¿½ï¿½ï¿½â¿¡ ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (moveInput.x < 0)
         {
-            spriteRenderer.flipX = true; // ¿ŞÂÊ
+            spriteRenderer.flipX = true; // ï¿½ï¿½ï¿½ï¿½
         }
         else if (moveInput.x > 0)
         {
-            spriteRenderer.flipX = false; // ¿À¸¥ÂÊ
+            spriteRenderer.flipX = false; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        }
+    }
+
+    void HandleAir()
+    {
+        if(CompareTag("Player"))
+        {
+            currentAir -= airDecreasePerSecond * Time.deltaTime;
+            currentAir = Mathf.Clamp(currentAir, 0, maxAir);
+            Debug.Log($"Playerì˜ ë‚¨ì€ ì‚°ì†Œ : {currentAir}");
+
+            if(currentAir <= 0)
+            {
+                Die();
+            }
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("ì‚°ì†Œ ë¶€ì¡± ì‚¬ë§");
+    }
+
+    public void AddMobTouch()
+    {
+        mobTouchCount++;
+    }
+
+    public void ReduceMobTouch()
+    {
+        mobTouchCount--;
+        if(mobTouchCount < 0)
+        {
+            mobTouchCount = 0;
         }
     }
 
     void FixedUpdate()
     {
-        // 3. ¹°¸® ¿£ÁøÀ» ÀÌ¿ëÇÑ ºÎµå·¯¿î ÀÌµ¿
+        // 3. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½Îµå·¯ï¿½ï¿½ ï¿½Ìµï¿½
         rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
     }
 }

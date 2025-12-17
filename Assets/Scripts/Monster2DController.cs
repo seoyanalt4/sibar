@@ -1,41 +1,52 @@
+using System.Collections;
 using UnityEngine;
 
 public class Monster2DController : MonoBehaviour
 {
     public enum State { Idle, Patrol, Chase, Attack, Returning }
 
-    private Rigidbody2D rb;
-
-    [Header("--- »óÅÂ ¹× ¼Óµµ ---")]
+    [Header("--- ìƒíƒœ ë° ì†ë„ ---")]
     public State currentState = State.Patrol;
     public float patrolSpeed = 2f;
     public float chaseSpeed = 4.5f;
 
-    [Header("--- ¹üÀ§ ¹× ½Ã¾ß ¼³Á¤ ---")]
-    public float detectionRange = 5f;   // °¨Áö ¹üÀ§
-    public float attackRange = 1.2f;      // °ø°İ ¹üÀ§
-    public LayerMask obstacleLayer;     // Àå¾Ö¹° ·¹ÀÌ¾î (º® µî)
+    [Header("--- ë²”ìœ„ ë° ì‹œì•¼ ì„¤ì • ---")]
+    public float detectionRange = 5f;
+    public float attackRange = 1.2f;
+    public LayerMask obstacleLayer; // Wall ë ˆì´ì–´ ë“±
+    public bool useLineOfSight = true;
 
-    [Header("--- °ø°İ ¼³Á¤ ---")]
+    [Header("--- ê³µê²© ì„¤ì • ---")]
     public int attackDamage = 10;
     public float attackCooldown = 1.5f;
     private float lastAttackTime;
 
-    [Header("--- ¼øÂû ¼³Á¤ ---")]
+    [Header("--- ê³µê²© í›„ ë”œë ˆì´(ë©ˆì¶¤) ---")]
+    public float AttackCoolTime = 1f; // ê³µê²© í›„ ë©ˆì¶”ëŠ” ì‹œê°„(=ë„ˆê°€ ì›í•œ 1ì´ˆ)
+    bool isAttacked = false;
+    Coroutine attackedCo;
+
+    [Header("--- ìˆœì°° ì„¤ì • ---")]
     public Transform[] patrolPoints;
     public float waitTime = 1.5f;
     private int pointIndex = 0;
     private float waitTimer;
 
-    [Header("--- ÂüÁ¶ ---")]
-    public Transform player;
-    private SpriteRenderer spriteRenderer;
-    private Vector2 originPos;
+    [Header("--- ì°¸ì¡° ---")]
+    public Transform player; // ì¸ìŠ¤í™í„°ë¡œ ë„£ì–´ë„ ë˜ê³  ìë™ íƒìƒ‰ë¨
+
+    SpriteRenderer spriteRenderer;
+    Rigidbody2D rb;
+    Vector2 originPos;
+
+    Vector2 moveTarget;
+    float moveSpeed;
+    bool hasMoveTarget;
 
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>(); // Rigidbody2D °¡Á®¿À±â
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Start()
@@ -43,51 +54,55 @@ public class Monster2DController : MonoBehaviour
         originPos = transform.position;
         waitTimer = waitTime;
 
-        if (player == null)
-        {
-            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-            if (playerObj != null) player = playerObj.transform;
-        }
+        // ìµœì´ˆ 1íšŒ í”Œë ˆì´ì–´ ì°¾ê¸°
+        TryFindPlayer();
     }
 
     void Update()
     {
-        if (player == null) return;
-
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        // »óÅÂ ¼³Á¤ ·ÎÁ÷
-        bool canSeePlayer = false;
-
-        // °Å¸®°¡ ¹üÀ§ ¾ÈÀÏ ¶§¸¸ ½Ã¾ß Ã¼Å©(Raycast)¸¦ ½ÇÇàÇÏ¿© ÃÖÀûÈ­
-        if (distanceToPlayer <= detectionRange)
+        if (player != null && !player.CompareTag("Player"))
         {
-            canSeePlayer = HasLineOfSight();
+            player = null;
+        }
+        
+        // ê³µê²© í›„ ë©ˆì¶¤ ì‹œê°„ ë™ì•ˆì€ AI ì •ì§€
+        if (isAttacked) return;
+
+        // í”Œë ˆì´ì–´ê°€ ì—†ìœ¼ë©´(íƒœê·¸ ë³€ê²½/crab ë“±) ë‹¤ì‹œ ì°¾ê¸°
+        if (player == null || !player.gameObject.activeInHierarchy)
+        {
+            TryFindPlayer();
         }
 
+        float distanceToPlayer = 0f;
+        bool canSeePlayer = false;
+
+        // í”Œë ˆì´ì–´ê°€ ìˆì„ ë•Œë§Œ ê±°ë¦¬/ì‹œì•¼ ì²´í¬
+        if (player != null && player.gameObject.activeInHierarchy)
+        {
+            distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+            if (distanceToPlayer <= detectionRange)
+            {
+                canSeePlayer = useLineOfSight ? HasLineOfSight() : true;
+            }
+        }
+
+        // ìƒíƒœ ê²°ì •
         if (canSeePlayer)
         {
-            if (distanceToPlayer <= attackRange)
-            {
-                if (currentState != State.Attack) Debug.Log("<color=red>°ø°İ »óÅÂ ÁøÀÔ!</color>");
-                currentState = State.Attack;
-            }
-            else
-            {
-                currentState = State.Chase;
-            }
+            if (distanceToPlayer <= attackRange) currentState = State.Attack;
+            else currentState = State.Chase;
         }
         else
         {
-            // ÇÃ·¹ÀÌ¾î°¡ ¹üÀ§¸¦ ¹ş¾î³µ°Å³ª Àå¾Ö¹° µÚ¿¡ ¼û¾úÀ» ¶§
             if (currentState == State.Chase || currentState == State.Attack)
             {
-                Debug.Log("<color=yellow>Å¸°Ù »ó½Ç:</color> º¹±ÍÇÕ´Ï´Ù.");
                 currentState = State.Returning;
             }
         }
 
-        // »óÅÂº° Çàµ¿
+        // ìƒíƒœë³„ í–‰ë™
         switch (currentState)
         {
             case State.Patrol: HandlePatrol(); break;
@@ -97,26 +112,52 @@ public class Monster2DController : MonoBehaviour
         }
     }
 
-    // ½Ã¾ß Ã¼Å© (Raycast)
+    void FixedUpdate()
+    {
+        if (!hasMoveTarget) return;
+        if (isAttacked) return;
+
+        Vector2 newPos = Vector2.MoveTowards(rb.position, moveTarget, moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(newPos);
+
+        hasMoveTarget = false; // ë§¤ í”„ë ˆì„ ëª©í‘œ ë‹¤ì‹œ ë°›ëŠ” êµ¬ì¡°
+    }
+
+
+    void MoveTowards(Vector2 target, float speed)
+    {
+        moveTarget = target;
+        moveSpeed = speed;
+        hasMoveTarget = true;
+
+        FlipSprite(target);
+    }
+
+  
+
+    void TryFindPlayer()
+    {
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        player = (playerObj != null) ? playerObj.transform : null;
+    }
+
     bool HasLineOfSight()
     {
-        Vector2 direction = (player.position - transform.position).normalized;
-        float distance = Vector2.Distance(transform.position, player.position);
+        if (player == null) return false;
 
-        // ¸ó½ºÅÍ À§Ä¡¿¡¼­ ÇÃ·¹ÀÌ¾î ¹æÇâÀ¸·Î ·¹ÀÌÀú¸¦ ½õ´Ï´Ù.
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, obstacleLayer);
+        Vector2 origin = rb != null ? rb.position : (Vector2)transform.position;
+        Vector2 direction = ((Vector2)player.position - origin).normalized;
+        float distance = Vector2.Distance(origin, player.position);
 
-        // ·¹ÀÌÀú°¡ Àå¾Ö¹° ·¹ÀÌ¾î¿¡ °É¸®´Â °Ô ¾ø´Ù¸é ÇÃ·¹ÀÌ¾î°¡ º¸ÀÌ´Â °Í
-        if (hit.collider == null)
-        {
-            Debug.Log("ÇÃ·¹ÀÌ¾î°¡ º¸ÀÔ´Ï´Ù.");
-        }
+        // ì¥ì• ë¬¼ ë ˆì´ì–´ì— ë§‰íˆë©´ ëª» ë´„
+        RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance, obstacleLayer);
         return hit.collider == null;
     }
 
     void HandleAttack()
     {
-        // °ø°İ Áß ÀÌµ¿ ÁßÁö ¹× ¹æÇâ ÀüÈ¯
+        if (player == null) return;
+
         FlipSprite(player.position);
 
         if (Time.time >= lastAttackTime + attackCooldown)
@@ -128,17 +169,40 @@ public class Monster2DController : MonoBehaviour
 
     void AttackPlayer()
     {
-        //PlayerHealth health = player.GetComponent<PlayerHealth>();
-        //if (health != null)
+        if (player == null) return;
+
+        Debug.Log("ëª¬ìŠ¤í„°ê°€ í”Œë ˆì´ì–´ë¥¼ ê³µê²©í•©ë‹ˆë‹¤!");
+        player.GetComponent<PlayerInteract>()?.TakeDamage(attackDamage);
+
+        StartAttackCoolTime(); // âœ… ê³µê²© í›„ 1ì´ˆ ë©ˆì¶¤
+    }
+
+    void StartAttackCoolTime()
+    {
+        if (attackedCo != null) StopCoroutine(attackedCo);
+        attackedCo = StartCoroutine(AttackedRoutine());
+    }
+
+    IEnumerator AttackedRoutine()
+    {
+        isAttacked = true;
+
+        if (rb != null)
         {
-        //    health.TakeDamage(attackDamage);
-        //    Debug.Log("ÇÃ·¹ÀÌ¾î¿¡°Ô µ¥¹ÌÁö¸¦ ÀÔÇû½À´Ï´Ù!");
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
         }
+
+        yield return new WaitForSeconds(AttackCoolTime);
+
+        isAttacked = false;
+        attackedCo = null;
     }
 
     void HandlePatrol()
     {
-        if (patrolPoints.Length == 0) return;
+        if (patrolPoints == null || patrolPoints.Length == 0) return;
+
         Vector2 target = patrolPoints[pointIndex].position;
         MoveTowards(target, patrolSpeed);
 
@@ -155,6 +219,7 @@ public class Monster2DController : MonoBehaviour
 
     void HandleChase()
     {
+        if (player == null) return;
         MoveTowards(player.position, chaseSpeed);
     }
 
@@ -167,35 +232,27 @@ public class Monster2DController : MonoBehaviour
         }
     }
 
-    void MoveTowards(Vector2 target, float speed)
-    {
-        // transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime); ¿òÁ÷ÀÌ´Â ¹æ½Ä º¯°æ
-        Vector2 currentPos = rb.position;
-        Vector2 newPos = Vector2.MoveTowards(currentPos, target, speed * Time.deltaTime);
-        rb.MovePosition(newPos); // º®¿¡ ºÎµúÈ÷¸é ¸ØÃß°Ô ÇÔ
 
-        FlipSprite(target);
-    }
 
     void FlipSprite(Vector2 target)
     {
-        if (target.x < transform.position.x) spriteRenderer.flipX = true;
-        else if (target.x > transform.position.x) spriteRenderer.flipX = false;
+        float xDiff = target.x - transform.position.x;
+        if (Mathf.Abs(xDiff) < 0.05f) return;
+        spriteRenderer.flipX = xDiff < 0;
     }
 
     private void OnDrawGizmosSelected()
     {
-        // °¨Áö ¹üÀ§ (»¡°£»ö)
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
-        // °ø°İ ¹üÀ§ (³ë¶õ»ö)
+
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, attackRange);
 
-        // ½Ã¾ß ·¹ÀÌÀú ½Ã°¢È­ (ÇÃ·¹ÀÌ¾î°¡ ÀÖÀ» ¶§¸¸)
-        if (player != null)
+        // ì‹œì•¼ ë””ë²„ê·¸ ë¼ì¸ (í”Œë ˆì´ ì¤‘ì—” playerê°€ nullì¼ ìˆ˜ ìˆìŒ)
+        if (useLineOfSight && player != null)
         {
-            Gizmos.color = HasLineOfSight() ? Color.green : Color.grey;
+            Gizmos.color = HasLineOfSight() ? Color.green : Color.gray;
             Gizmos.DrawLine(transform.position, player.position);
         }
     }
