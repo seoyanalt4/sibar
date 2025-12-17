@@ -1,0 +1,1078 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-신명근" at "2025-12-17T19:43:45.3704834Z"
+Built from '6000.3/respin/6000.3.1f1-f56f53296c2c' branch; Version is '6000.3.1f1 (37142da19a94) revision 3609645'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 32491 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-12-17T19:43:45Z
+
+COMMAND LINE ARGUMENTS:
+C:\Unity Editor\6000.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker55
+-projectPath
+C:/Unity Project/GamZem
+-logFile
+Logs/AssetImportWorker55.log
+-srvPort
+58655
+-licensingIpc
+LicenseClient-신명근
+-job-worker-count
+15
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Unity Project/GamZem
+C:/Unity Project/GamZem
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [27228]  Target information:
+
+Player connection [27228]  * "[IP] 172.17.105.77 [Port] 0 [Flags] 2 [Guid] 4169205192 [EditorId] 4169205192 [Version] 1048832 [Id] WindowsEditor(7,TTingGS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [27228]  * "[IP] 192.168.137.1 [Port] 0 [Flags] 2 [Guid] 4169205192 [EditorId] 4169205192 [Version] 1048832 [Id] WindowsEditor(7,TTingGS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [27228] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [27228] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 15
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 5.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.1f1 (37142da19a94)
+[Subsystems] Discovering subsystems at path C:/Unity Editor/6000.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Unity Project/GamZem/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 Laptop GPU (ID=0x2860)
+    Vendor:   NVIDIA
+    VRAM:     7948 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Unity Editor/6000.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Unity Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Unity Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.17.4'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-신명근"
+[Licensing::IpcConnector] LicenseClient-신명근 channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-신명근-6000.3.1" at "2025-12-17T19:43:46.8159946Z"
+Registering precompiled unity dll's ...
+Register platform support module: C:/Unity Editor/6000.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              d452d37cbbe24efda44805813e84e5c3
+  Correlation Id:          59de42ca91f0245af30488d335f8a9f5
+  External correlation Id: 8967747725021669531
+  Machine Id:              0M/ABMMGBGM+hP/9vJJ0T88awfw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-신명근-6000.3.1" (connect: 0.00s, validation: 0.00s, handshake: 1.14s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-신명근-6000.3.1-notifications" at "2025-12-17T19:43:47.9582623Z"
+[Licensing::Module] Licensing Background thread has ended after 2.59s
+[Licensing::Module] Licensing is initialized (took 1.10s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569682563822-gwichana-UnityProStuXXXX
+  Product: Unity Student
+  Type: Assigned
+  Expiration: 2026-10-04T14:32:33Z
+Register platform support module: C:/Unity Editor/6000.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 1.107858 seconds.
+- Loaded All Assemblies, in  1.624 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 908 ms
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.468 seconds
+Domain Reload Profiling: 3090ms
+	BeginReloadAssembly (137ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (1178ms)
+	LoadAllAssembliesAndSetupDomain (226ms)
+		LoadAssemblies (134ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (222ms)
+			TypeCache.Refresh (220ms)
+				TypeCache.ScanAssembly (207ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (1469ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1414ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1023ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (199ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.761 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.812 seconds
+Domain Reload Profiling: 1568ms
+	BeginReloadAssembly (139ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (534ms)
+		LoadAssemblies (340ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (261ms)
+			TypeCache.Refresh (192ms)
+				TypeCache.ScanAssembly (176ms)
+			BuildScriptInfoCaches (56ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (813ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (681ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (171ms)
+			ProcessInitializeOnLoadAttributes (372ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 2.61 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7264 unused Assets / (4.8 MB). Loaded Objects now: 8084.
+Memory consumption went from 169.9 MB to 165.1 MB.
+Total: 14.538400 ms (FindLiveObjects: 0.785400 ms CreateObjectMapping: 0.533400 ms MarkObjects: 9.995500 ms  DeleteObjects: 3.221900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 407956.587215 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/04_String_Iron_Bundle.png
+  artifactKey: Guid(ce0e23d56e62baf45948e6f87390d82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/04_String_Iron_Bundle.png using Guid(ce0e23d56e62baf45948e6f87390d82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f96db65408658d58b9c5eed6cfb61ed0') in 0.1747819 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/15_Hook_Angelic.png
+  artifactKey: Guid(31b41cc7ac1f36f4aac68d3d06cf2fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/15_Hook_Angelic.png using Guid(31b41cc7ac1f36f4aac68d3d06cf2fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1eddf680c68119f6feeacedc605fe0f') in 0.026855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/14_Rod_Angelic_Advanced.png
+  artifactKey: Guid(764ff34dc0ce9324baa762637e3b39e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/14_Rod_Angelic_Advanced.png using Guid(764ff34dc0ce9324baa762637e3b39e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8061cc6ffe749e6b9caf6b5c5d8abf5c') in 0.0261682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/29_Treasure_D.png
+  artifactKey: Guid(5662b10eafbd3bc488f9126898b2b0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/29_Treasure_D.png using Guid(5662b10eafbd3bc488f9126898b2b0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cfbefaec12007057c600d7556ea4c402') in 0.0263006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/16_Hook_Iron.png
+  artifactKey: Guid(0d96b4bb81008534ba59aba78d26586d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/16_Hook_Iron.png using Guid(0d96b4bb81008534ba59aba78d26586d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0d17597f818afc8b7fee2b49164e1ea') in 0.0273725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.534345 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/45_Crimson_Clam.png
+  artifactKey: Guid(e847da7840f0bbf419c21495feb5e507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/45_Crimson_Clam.png using Guid(e847da7840f0bbf419c21495feb5e507) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20ae072f84f57c6ca3b02ecd0da65ee8') in 0.0331836 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.511035 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/53_Fish_Koi_White_Spots.png
+  artifactKey: Guid(750c17479c1b88a4c8ea2a5edcb445f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/53_Fish_Koi_White_Spots.png using Guid(750c17479c1b88a4c8ea2a5edcb445f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b81a60d2c7c54138223b128823fab425') in 0.0394882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/63_Amphibian_Frog.png
+  artifactKey: Guid(982051bfc3570524bb514594336cf59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/63_Amphibian_Frog.png using Guid(982051bfc3570524bb514594336cf59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac46b5beef1160a9cefc49bd307ba622') in 0.0309495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.256903 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/69_Fish_Sword.png
+  artifactKey: Guid(3e8a6026c9ebf5c44a6d9cd58a85dcf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/69_Fish_Sword.png using Guid(3e8a6026c9ebf5c44a6d9cd58a85dcf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3df6fe9fd6b442fb0fce4c039064c42') in 0.0564093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.647458 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/77_Shell_A.png
+  artifactKey: Guid(29e4d802c56bf98448c854baef68dd56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/77_Shell_A.png using Guid(29e4d802c56bf98448c854baef68dd56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74fd50996effdfe7ff56613d0ef8ad7c') in 0.0584414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.513379 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/85_Fish_Salmon_Sockeye.png
+  artifactKey: Guid(ce418b6cbe92ae448986c7a628acc1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/85_Fish_Salmon_Sockeye.png using Guid(ce418b6cbe92ae448986c7a628acc1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd31e37bd2ab1781a23c7c83f73f1cea') in 0.0251687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.266475 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/93_Fish_Trout_Brown.png
+  artifactKey: Guid(93789636e0848c547bb7a102a8068831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/93_Fish_Trout_Brown.png using Guid(93789636e0848c547bb7a102a8068831) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63ec55ab764c69dae1261cf3b9291478') in 0.0360948 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.342279 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/101_Fish_WhiteBream1.png
+  artifactKey: Guid(ee57802218e8e0643b6d939be668c905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/101_Fish_WhiteBream1.png using Guid(ee57802218e8e0643b6d939be668c905) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e13bd33fdeb8a37f9b6a1998039f919') in 0.033483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.273719 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/109_Fish_Chromis_Half&Half.png
+  artifactKey: Guid(c8f3de604ad8529429f6aee455f50b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/109_Fish_Chromis_Half&Half.png using Guid(c8f3de604ad8529429f6aee455f50b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f03f212ec2edf47c2a15ee6cdb5a81b') in 0.0491406 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/117_Fish_PurpleQueen.png
+  artifactKey: Guid(f2bda63b121a56245bb1d1d62a803dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Fishing/Singles/117_Fish_PurpleQueen.png using Guid(f2bda63b121a56245bb1d1d62a803dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3ecfde12d72e8d63b45aa94cfff4ee1') in 0.0287502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.101141 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/03_Throwable_Shuriken_A.png
+  artifactKey: Guid(19ebf32e7167c7e4f98272a1a62ed77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/03_Throwable_Shuriken_A.png using Guid(19ebf32e7167c7e4f98272a1a62ed77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbeea81d2cd2c96a98739a77ac16badf') in 0.0654854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/40_Arrow_Wooden_O.png
+  artifactKey: Guid(d0ab61be614fa474984ffd863900cac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/40_Arrow_Wooden_O.png using Guid(d0ab61be614fa474984ffd863900cac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61fc3d24a8ca8e08fbaace24d39ecf70') in 0.0486867 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/20_Craftable_Rod_Angelic.png
+  artifactKey: Guid(8288ac233f4723e449b227ed5f0f9c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/20_Craftable_Rod_Angelic.png using Guid(8288ac233f4723e449b227ed5f0f9c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3587132c4a16520e89b9abe6dcf76f1b') in 0.0519517 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/28_Arrow_Wooden_C.png
+  artifactKey: Guid(20a7828046a12044aa6373af25078ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/28_Arrow_Wooden_C.png using Guid(20a7828046a12044aa6373af25078ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '56c2b465f9488a1c7a6e9580b2c24c58') in 0.0237239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/37_Arrow_Wooden_L.png
+  artifactKey: Guid(27e38e4d481aa5d4bb8b91b32e8b4614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/37_Arrow_Wooden_L.png using Guid(27e38e4d481aa5d4bb8b91b32e8b4614) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37ff6b432dc3f5e5f4a961dd80cb2de0') in 0.0261127 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.774635 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/45_Pickaxe_Copper.png
+  artifactKey: Guid(dd07343578bd4954199813580fa83c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/45_Pickaxe_Copper.png using Guid(dd07343578bd4954199813580fa83c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe2cf8fa5ef0d56e7a0d7a2638a0fe53') in 0.0300316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/53_Arrow_Copper_H.png
+  artifactKey: Guid(bcb02a284a657344f819b952bdf6c3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/53_Arrow_Copper_H.png using Guid(bcb02a284a657344f819b952bdf6c3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '864cf5fd528abaa6a8977ff5c97d780b') in 0.0240254 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.198148 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/61_Ore_Iron.png
+  artifactKey: Guid(4cc56e8f22350714b8da0873a0f318cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/61_Ore_Iron.png using Guid(4cc56e8f22350714b8da0873a0f318cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2891fb39eea3cafb3fe86e4616c2fd7') in 0.0245799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/70_Arrow_Iron_E.png
+  artifactKey: Guid(9ba5adb69e1f5d94ca173d9a93088759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/70_Arrow_Iron_E.png using Guid(9ba5adb69e1f5d94ca173d9a93088759) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b809595160ffa765b0302bd8a574ca2c') in 0.0216721 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/93_Arrow_Silver_H.png
+  artifactKey: Guid(581d3014d04ee1847a1387a02f05c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/93_Arrow_Silver_H.png using Guid(581d3014d04ee1847a1387a02f05c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06219eb832d3ce44db7891cc204192ec') in 0.0240147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/96_Arrow_Silver_K.png
+  artifactKey: Guid(8804ca0ecc545eb4a8afede98de34ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/96_Arrow_Silver_K.png using Guid(8804ca0ecc545eb4a8afede98de34ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd56bb05f21315a4bdcca181979aebebd') in 0.0254391 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/90_Arrow_Silver_E.png
+  artifactKey: Guid(66e104ad98f19c54f8ab099ed9620fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/90_Arrow_Silver_E.png using Guid(66e104ad98f19c54f8ab099ed9620fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e5625c5d073fc0d0f7121a493ab3b0d') in 0.0249409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/104_Dust_Steel.png
+  artifactKey: Guid(710d870de577e3c4f89bd525dca15474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/104_Dust_Steel.png using Guid(710d870de577e3c4f89bd525dca15474) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fac08cdc281e5ae746a6a2dbf12b1b57') in 0.0239404 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/126_Arrow_Gold_A.png
+  artifactKey: Guid(4c60547672c978c429513bfbda2c218f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/126_Arrow_Gold_A.png using Guid(4c60547672c978c429513bfbda2c218f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a2a888018939760d4bf2d4269fa237e') in 0.0258553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/131_Arrow_Gold_F.png
+  artifactKey: Guid(0908963abc952b849b8f9222f11f6aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/131_Arrow_Gold_F.png using Guid(0908963abc952b849b8f9222f11f6aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df902e5437582a9309c62b3a35831464') in 0.0250429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/116_Arrow_Steel_K.png
+  artifactKey: Guid(d69d12cda660b0f4e81e1fd2da9c5aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/116_Arrow_Steel_K.png using Guid(d69d12cda660b0f4e81e1fd2da9c5aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ae147a816ef6fbd9bfe91a9ad341ba0') in 0.0261611 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/114_Arrow_Steel_I.png
+  artifactKey: Guid(0fa52531862e9444aa954999502a4c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/114_Arrow_Steel_I.png using Guid(0fa52531862e9444aa954999502a4c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e33b8848b04c66a74e7e60ab77bef3cd') in 0.0231686 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/148_Arrow_Platinum_C.png
+  artifactKey: Guid(db057094f687e12448c5233b1792782b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/148_Arrow_Platinum_C.png using Guid(db057094f687e12448c5233b1792782b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '246624c1b7711170e345f3f3dad2c824') in 0.025405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/166_Arrow_Cobalt_A.png
+  artifactKey: Guid(6e235d0ef1262604aa682121855d554f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/166_Arrow_Cobalt_A.png using Guid(6e235d0ef1262604aa682121855d554f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e36c7c7555e150acffdd7e3b9f9729e6') in 0.023506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/161_Ore_Cobalt.png
+  artifactKey: Guid(1499ef5b8e7eb2b4f8eb4786aeaea986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/161_Ore_Cobalt.png using Guid(1499ef5b8e7eb2b4f8eb4786aeaea986) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4726e2e5dfe452cf617f7ea7749f19af') in 0.0279593 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/153_Arrow_Platinum_H.png
+  artifactKey: Guid(9c53467a92698bb4098d8ed646db2b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/153_Arrow_Platinum_H.png using Guid(9c53467a92698bb4098d8ed646db2b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'feeb187c69d104c063cd25bfb7d3bdb8') in 0.023809 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.320428 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/173_Arrow_Cobalt_H.png
+  artifactKey: Guid(ebcdc747b2acc884bba2d88459d20f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/173_Arrow_Cobalt_H.png using Guid(ebcdc747b2acc884bba2d88459d20f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c719bfe8f03a2912658a7cb10faffaca') in 0.0388904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/183_MetalChunk_Adamantine.png
+  artifactKey: Guid(88c31e92c29980b418f4467f947a98c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/183_MetalChunk_Adamantine.png using Guid(88c31e92c29980b418f4467f947a98c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c1fc7bd873b8e9c17d67554611bb1a77') in 0.0262443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/208_Arrow_Crimson_C.png
+  artifactKey: Guid(86408e2b2bad4774caa9c99f63dfb744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/208_Arrow_Crimson_C.png using Guid(86408e2b2bad4774caa9c99f63dfb744) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1b8c3a411521ab5556fd67a9b16bd6d') in 0.0234487 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/224_Dust_Angelic.png
+  artifactKey: Guid(e1c4f8cb9f182d54ab619e150a32f548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/224_Dust_Angelic.png using Guid(e1c4f8cb9f182d54ab619e150a32f548) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e3864e1279ec259dd418b5a9dbf7f2d') in 0.0220817 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/277_Arrow_Nova_L.png
+  artifactKey: Guid(e8e3c937bab93f941b39edcb51f00373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/277_Arrow_Nova_L.png using Guid(e8e3c937bab93f941b39edcb51f00373) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '645c54dffdb71e62cddd49e3525994ff') in 0.0232534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/333_Feather_White.png
+  artifactKey: Guid(bd466d4989d0a544796d5ff85f39f597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/333_Feather_White.png using Guid(bd466d4989d0a544796d5ff85f39f597) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee4d09b27ed462c98029352c37320ce0') in 0.0271438 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/437_Feather_Turquoise.png
+  artifactKey: Guid(d66fde186fdddeb459a17303ef994012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/437_Feather_Turquoise.png using Guid(d66fde186fdddeb459a17303ef994012) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4cb53dddd968bbb12e934c39a40f547') in 0.0250015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/476_Copper_Gear.png
+  artifactKey: Guid(b51891e48fa15bd4b97a1c321f7d9e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/476_Copper_Gear.png using Guid(b51891e48fa15bd4b97a1c321f7d9e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '225181dfafbdd7c1d954d8952448fa36') in 0.0262313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/395_Feather_Purple.png
+  artifactKey: Guid(e46087508ca75aa4787fbe99cef9aa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/395_Feather_Purple.png using Guid(e46087508ca75aa4787fbe99cef9aa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '937e0d8fef74a3b481b786b0bf79106c') in 0.0276756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/357_Feather_Black.png
+  artifactKey: Guid(f0958dd982bbecb43a1d77a641a1b43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/357_Feather_Black.png using Guid(f0958dd982bbecb43a1d77a641a1b43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f65aa606bd3cdc3ce903532102a035d9') in 0.0250863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/470_Copper_Bag_Leather_C.png
+  artifactKey: Guid(a5ed6f92cb5569643942aacb4831dd29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/470_Copper_Bag_Leather_C.png using Guid(a5ed6f92cb5569643942aacb4831dd29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3fb9aa0320a1a79d7c5526fd03bd5238') in 0.0232091 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/486_Iron_Bag_Leather_B.png
+  artifactKey: Guid(227a0fd0abc93db46ba93925f13171a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/486_Iron_Bag_Leather_B.png using Guid(227a0fd0abc93db46ba93925f13171a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b96af977161aa4010970db505bd23a8') in 0.025231 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/303_Feather_Pink_A.png
+  artifactKey: Guid(6e227684fd82a5e42974acf074bb099e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/303_Feather_Pink_A.png using Guid(6e227684fd82a5e42974acf074bb099e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15edf18497a67f348a13d19d91d4c031') in 0.026217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/347_Feather_Grey.png
+  artifactKey: Guid(476c074c871587744bdd6878fc0e5240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/347_Feather_Grey.png using Guid(476c074c871587744bdd6878fc0e5240) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2aeaf42124637a75e6616c19a0c69fc') in 0.0237393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/220_Arrow_Crimson_O.png
+  artifactKey: Guid(c1aaf3c366cd65946856cca8709b48ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/220_Arrow_Crimson_O.png using Guid(c1aaf3c366cd65946856cca8709b48ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0313ce6f8b14b146e12f7d759c8bdac4') in 0.0268068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/216_Arrow_Crimson_K.png
+  artifactKey: Guid(d7fdcf38ab3513c438013dd803918ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/216_Arrow_Crimson_K.png using Guid(d7fdcf38ab3513c438013dd803918ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f8ec468a1491052aaa468a1042e9e8f') in 0.0245799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/348_Feather_Grey.png
+  artifactKey: Guid(3d37d43ebbf5ab745b4174922d83b5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/348_Feather_Grey.png using Guid(3d37d43ebbf5ab745b4174922d83b5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80347c67c8b5a9a14b54832b6d177b1f') in 0.0276108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/526_Platinum_Bag_Leather_B.png
+  artifactKey: Guid(e9ae701bf9b23934fb9ad25dba87ddbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/526_Platinum_Bag_Leather_B.png using Guid(e9ae701bf9b23934fb9ad25dba87ddbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0af7ac6ee817c2da93b9e879a0b521a9') in 0.0274388 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/420_Feather_BlueLight.png
+  artifactKey: Guid(cf4e1ae4e2d78c649bd147dbcb6c262e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/420_Feather_BlueLight.png using Guid(cf4e1ae4e2d78c649bd147dbcb6c262e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '313114cb5ef3536a2cb912df41907944') in 0.0204653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/547_Ingot_Special_Crimson.png
+  artifactKey: Guid(3bb1ec1ea4d570443aaf6befd50cc08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/547_Ingot_Special_Crimson.png using Guid(3bb1ec1ea4d570443aaf6befd50cc08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a9d7aea7a751b42ffcbd21885cb4762') in 0.0236586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/237_Arrow_Angelic_L.png
+  artifactKey: Guid(72c3f4f422b51fd4db7f03d86a68ea6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/237_Arrow_Angelic_L.png using Guid(72c3f4f422b51fd4db7f03d86a68ea6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '193286abbb1807dd71ccadf1648d6a95') in 0.0247953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/474_Copper_Gear.png
+  artifactKey: Guid(1bfadb1344adaf041be9b84547342968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/474_Copper_Gear.png using Guid(1bfadb1344adaf041be9b84547342968) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18a2d899cf042fe72463c1c974dcc368') in 0.0252214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/485_Iron_Bag_Leather_B.png
+  artifactKey: Guid(afc9ad60ae6fb7c45a7fcf531416f3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/485_Iron_Bag_Leather_B.png using Guid(afc9ad60ae6fb7c45a7fcf531416f3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64663d446e5fc50c9b0fb2e0a6414e99') in 0.0238651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/538_Platinum_Gear.png
+  artifactKey: Guid(b8aaf1529357cdc4da75d0ebde7e5c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/538_Platinum_Gear.png using Guid(b8aaf1529357cdc4da75d0ebde7e5c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9217dd48980dcee48790b4e960a3ecd3') in 0.0247484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/274_Arrow_Nova_I.png
+  artifactKey: Guid(6a7c08f5d1e548440913d0a732a8de8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/274_Arrow_Nova_I.png using Guid(6a7c08f5d1e548440913d0a732a8de8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e10c852bb98aafb067dffe3265d7a88') in 0.0246528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/537_Platinum_Gear.png
+  artifactKey: Guid(e2c1ce9847276564389f143f56273b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/537_Platinum_Gear.png using Guid(e2c1ce9847276564389f143f56273b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbf25fa8eb6e0330a3a91dc320f40ccb') in 0.0245418 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/244_Dust_Fateful.png
+  artifactKey: Guid(72c998a98cacc4b49b7dc51d57a7ce26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/244_Dust_Fateful.png using Guid(72c998a98cacc4b49b7dc51d57a7ce26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0954e9e5228ff3f3f3c6b25dca402da7') in 0.0241776 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/393_Feather_Purple.png
+  artifactKey: Guid(dab6e6f30b1d9154fb30d10d574edd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/393_Feather_Purple.png using Guid(dab6e6f30b1d9154fb30d10d574edd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cf9a4fb4d3b05d47aafdcb9a2a75322') in 0.0273058 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/337_Feather_White.png
+  artifactKey: Guid(d05862d106dafb6489a112b397e61a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/337_Feather_White.png using Guid(d05862d106dafb6489a112b397e61a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10da36185a25c6711ef85e722a2d634b') in 0.0229265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/203_MetalChunk_Crimson.png
+  artifactKey: Guid(d0656c6dcc0c9e041a1e6b1d772fcd0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/203_MetalChunk_Crimson.png using Guid(d0656c6dcc0c9e041a1e6b1d772fcd0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0deed25163d7fb9fc502955be8ec0f54') in 0.02516 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/527_Platinum_Bag_Leather_B.png
+  artifactKey: Guid(47e332ac690e4ae4881cc29d3e20891d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/527_Platinum_Bag_Leather_B.png using Guid(47e332ac690e4ae4881cc29d3e20891d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff432a76c25305540f830d0445bb0123') in 0.0264932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/294_Feather_White_B.png
+  artifactKey: Guid(d6248cdd372f2cc4a8b383a1260bb251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/294_Feather_White_B.png using Guid(d6248cdd372f2cc4a8b383a1260bb251) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96577dc5fda70a321dcc522610b45a97') in 0.0276536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/212_Arrow_Crimson_G.png
+  artifactKey: Guid(35f378fb725a80342aec2c8a0d528e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/212_Arrow_Crimson_G.png using Guid(35f378fb725a80342aec2c8a0d528e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e24c6459e8a161ff514298bbb0dec80') in 0.0236838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/197_Arrow_Adamantine_L.png
+  artifactKey: Guid(71edd060e94556b41a5bf8401594492a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/197_Arrow_Adamantine_L.png using Guid(71edd060e94556b41a5bf8401594492a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c48fcb06fb78882e7b56434a1b201ea') in 0.0260235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/484_Iron_Bag_Leather_A.png
+  artifactKey: Guid(dcc39fa13bf40b741a9fcef3ae24f207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/484_Iron_Bag_Leather_A.png using Guid(dcc39fa13bf40b741a9fcef3ae24f207) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1bf9929d8b966ccb3b97471c44416598') in 0.025056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/267_Arrow_Nova_B.png
+  artifactKey: Guid(10f091325e726fb4eb2f3cc889e1c6fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/267_Arrow_Nova_B.png using Guid(10f091325e726fb4eb2f3cc889e1c6fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7961c24750932ea4a07d3565538609b3') in 0.0260177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/535_Platinum_Gear.png
+  artifactKey: Guid(e511b78f41612f540ab411ff3ae94576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/535_Platinum_Gear.png using Guid(e511b78f41612f540ab411ff3ae94576) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1bb7ce01de87d2d00009ffc2ffb43d63') in 0.0300052 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/532_Platinum_Bag_Leather_C.png
+  artifactKey: Guid(8744c4def1bc01f459b5051182f15e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/532_Platinum_Bag_Leather_C.png using Guid(8744c4def1bc01f459b5051182f15e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e2473a0175cd156c03175c621e83b6b') in 0.0273357 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/352_Feather_Black.png
+  artifactKey: Guid(7423077cdc5501147b23a9f4f0321f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/352_Feather_Black.png using Guid(7423077cdc5501147b23a9f4f0321f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b76f856f75b2cd1cec71499c08b33c0d') in 0.0273696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/394_Feather_Purple.png
+  artifactKey: Guid(60992791593b59e43b92c3c38ebae871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/394_Feather_Purple.png using Guid(60992791593b59e43b92c3c38ebae871) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b06a21330a2988af7b13409ecc4aca1') in 0.0263641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.096546 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/386_Feather_Pink.png
+  artifactKey: Guid(a0fb87ddf19eb7c4a89bb0310d744331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/386_Feather_Pink.png using Guid(a0fb87ddf19eb7c4a89bb0310d744331) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8a536b11e5e93304877d7dcf666f1d1') in 0.0412473 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/378_Feather_Red.png
+  artifactKey: Guid(5397e59772ce28445acebcf89055ac59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/378_Feather_Red.png using Guid(5397e59772ce28445acebcf89055ac59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8be456b3b51eab968f9dbf35a36d1b93') in 0.0470994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/General/Singles/372_Feather_Red.png
+  artifactKey: Guid(ec6bdfe8beeb5b74296628ef08de9213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/General/Singles/372_Feather_Red.png using Guid(ec6bdfe8beeb5b74296628ef08de9213) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4931b4ee1fed861011daed3cb4d13c9f') in 0.0503139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.882235 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/04_Skull_Cyclops.png
+  artifactKey: Guid(ae189df99e10e8d42a4d9547ddefd4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/04_Skull_Cyclops.png using Guid(ae189df99e10e8d42a4d9547ddefd4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01f62117c8b66251d51478c006a1cdeb') in 0.0388232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/28_Bone_Thick_Cracked.png
+  artifactKey: Guid(b4e792f5b7d4c2c4ebf41e33945cfb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/28_Bone_Thick_Cracked.png using Guid(b4e792f5b7d4c2c4ebf41e33945cfb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0902dea13722bc18e4f2995498802f3') in 0.024154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/35_Fresh_Ear_Titan.png
+  artifactKey: Guid(3d13cfd8cc1f9114595400e8aae49fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/35_Fresh_Ear_Titan.png using Guid(3d13cfd8cc1f9114595400e8aae49fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa2aa66bed1573ad06b562ba0b174dd9') in 0.0634892 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/12_Fresh_Tongue.png
+  artifactKey: Guid(433408846162a084493b4bdf2f9093b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/12_Fresh_Tongue.png using Guid(433408846162a084493b4bdf2f9093b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cbd98de29a702a6ff91217d7e5207c4') in 0.0249815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/16_Rotten_Eyeball.png
+  artifactKey: Guid(edbc1476f16416f49bdcd6e34c9abcc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/16_Rotten_Eyeball.png using Guid(edbc1476f16416f49bdcd6e34c9abcc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd9afd73f3e0588135f9f3ae26411a0da') in 0.0252644 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.161835 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/45_Bird_Loot_A.png
+  artifactKey: Guid(75ff8ed2f70cbe943b3bcefb88e38ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/45_Bird_Loot_A.png using Guid(75ff8ed2f70cbe943b3bcefb88e38ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0c12c5c55a9b348886bfafab58de953') in 0.0316793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.331860 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/53_Cloth_A.png
+  artifactKey: Guid(5169dcbc7b9fbe04bb6d9cf652bd1b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/53_Cloth_A.png using Guid(5169dcbc7b9fbe04bb6d9cf652bd1b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1fed6f62b683b4f2432aabf60ca9dcf0') in 0.0250718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/60_Cloth_C.png
+  artifactKey: Guid(8ae64ed6ef8f5d743906176de91ba633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/60_Cloth_C.png using Guid(8ae64ed6ef8f5d743906176de91ba633) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbc2e7219b65128e668dad48737a1ac2') in 0.0259131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/71_Snow_Man.png
+  artifactKey: Guid(43a0feb0fd613ce42a930b043cc925ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/71_Snow_Man.png using Guid(43a0feb0fd613ce42a930b043cc925ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85a78867421ec21c5c1a9269f48ba2f3') in 0.0237014 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.234121 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/77_Rat_Loot_Ear.png
+  artifactKey: Guid(3781296f7eee814409196f6bf90091e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/77_Rat_Loot_Ear.png using Guid(3781296f7eee814409196f6bf90091e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c04e6e923775970c9e219742142e7268') in 0.0246927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/88_Crab_Loot_Shell.png
+  artifactKey: Guid(2088e7d5723b1ac4b8636e6cfd3c7cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/88_Crab_Loot_Shell.png using Guid(2088e7d5723b1ac4b8636e6cfd3c7cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b3fbde69777f44b23b5ce6285368cf94') in 0.0229954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/93_Cleaners_Hand_Sanitizer.png
+  artifactKey: Guid(5ccd308dad776ed4982dc51b6aca8ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/93_Cleaners_Hand_Sanitizer.png using Guid(5ccd308dad776ed4982dc51b6aca8ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '030c4590c73f470567e754339533d2ee') in 0.0237483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.334294 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/101_Plushie_Kangaroo.png
+  artifactKey: Guid(f45ecdbb4e67e5845894d2369ab67b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/101_Plushie_Kangaroo.png using Guid(f45ecdbb4e67e5845894d2369ab67b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96d16a1fcf17bd79090b4f78581579d9') in 0.0291407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.255702 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/109_Plushie_Bear_Panda.png
+  artifactKey: Guid(adcfa19b6adf4964e9883bd3630726a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/109_Plushie_Bear_Panda.png using Guid(adcfa19b6adf4964e9883bd3630726a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '24310142b1d2173ab8b65529f29b193d') in 0.0279801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/117_Pirate_Loot_Golden_Hook.png
+  artifactKey: Guid(c883a862d8476f54584011245a7db3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/117_Pirate_Loot_Golden_Hook.png using Guid(c883a862d8476f54584011245a7db3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '710fa2cc469b6ce3206dc371644a8372') in 0.0231486 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/133_Card_Magic_Fire.png
+  artifactKey: Guid(c27bc73eae8e58348ab508dfed4137e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/133_Card_Magic_Fire.png using Guid(c27bc73eae8e58348ab508dfed4137e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a81cb94a71897bd4c7f6221c7f267595') in 0.0313476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/118_Pirate_Loot_Eyepatch.png
+  artifactKey: Guid(0e9de5a66edb7f84ca193c2365a30ef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/118_Pirate_Loot_Eyepatch.png using Guid(0e9de5a66edb7f84ca193c2365a30ef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc5763121cf355f0771f80367541be3e') in 0.0261192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.284103 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/141_Silk_Black.png
+  artifactKey: Guid(df5de1fc4e371a945b91fdcc691ee1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/141_Silk_Black.png using Guid(df5de1fc4e371a945b91fdcc691ee1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06a0649d412f532621595cdb3c7b29f0') in 0.0287198 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/149_Golem_Shard.png
+  artifactKey: Guid(57e318f8dfe40b940b1613cfe08ad241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/149_Golem_Shard.png using Guid(57e318f8dfe40b940b1613cfe08ad241) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a20e22180fd241ed5deec60c0cc9d03') in 0.0237862 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/156_FishScales_Yellow.png
+  artifactKey: Guid(3e57344e6011c9d4993cda784a6bad94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/156_FishScales_Yellow.png using Guid(3e57344e6011c9d4993cda784a6bad94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3d9df5c741755f5b012b1533a6151c4') in 0.0251172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.321447 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/165_White_Queen.png
+  artifactKey: Guid(2dd24d8f65cf5614aa80a43fcdb05726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/165_White_Queen.png using Guid(2dd24d8f65cf5614aa80a43fcdb05726) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36e443c81943890552fdc10ea49b8999') in 0.0260931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/176_Orb_White.png
+  artifactKey: Guid(204ed409524307b40b21db96812965ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/176_Orb_White.png using Guid(204ed409524307b40b21db96812965ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a60454bb9406e2027c976ec6270c1b7') in 0.0223865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.216740 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/181_Elite_Soul.png
+  artifactKey: Guid(bc8404a4b4a4ec84f84631d6e9161690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/181_Elite_Soul.png using Guid(bc8404a4b4a4ec84f84631d6e9161690) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f9953946eb6a9fd7a672dbdc1ef9584') in 0.0329479 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/189_RustyTrinket_Woman.png
+  artifactKey: Guid(d9af23b6d0605f24e92400bf6c5b0f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/189_RustyTrinket_Woman.png using Guid(d9af23b6d0605f24e92400bf6c5b0f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93b5b225bbf13c96e270a9531e0ae1b9') in 0.0229676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.458893 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/197_Bear_Claw.png
+  artifactKey: Guid(6a3cf8a146a9d4f49acd8043fe9de047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/197_Bear_Claw.png using Guid(6a3cf8a146a9d4f49acd8043fe9de047) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f3aa73150387681ecec35b88c8a6513') in 0.0243821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/203_Dice.png
+  artifactKey: Guid(0ca4fa57e07fbed46b85c379daeb5a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Admurin's Pixel Items/PixelItems/Miscellaneous/Singles/203_Dice.png using Guid(0ca4fa57e07fbed46b85c379daeb5a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c0f241aa2edc90c843d3ba2a04d5cd8') in 0.0233622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,0 +1,1974 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-신명근" at "2025-12-17T19:05:33.77464Z"
+Built from '6000.3/respin/6000.3.1f1-f56f53296c2c' branch; Version is '6000.3.1f1 (37142da19a94) revision 3609645'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 32491 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-12-17T19:05:33Z
+
+COMMAND LINE ARGUMENTS:
+C:\Unity Editor\6000.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker35
+-projectPath
+C:/Unity Project/GamZem
+-logFile
+Logs/AssetImportWorker35.log
+-srvPort
+58655
+-licensingIpc
+LicenseClient-신명근
+-job-worker-count
+15
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Unity Project/GamZem
+C:/Unity Project/GamZem
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [23556]  Target information:
+
+Player connection [23556]  * "[IP] 172.17.105.77 [Port] 0 [Flags] 2 [Guid] 645534694 [EditorId] 645534694 [Version] 1048832 [Id] WindowsEditor(7,TTingGS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23556]  * "[IP] 192.168.137.1 [Port] 0 [Flags] 2 [Guid] 645534694 [EditorId] 645534694 [Version] 1048832 [Id] WindowsEditor(7,TTingGS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23556] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23556] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 15
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 3.94 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.1f1 (37142da19a94)
+[Subsystems] Discovering subsystems at path C:/Unity Editor/6000.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Unity Project/GamZem/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 Laptop GPU (ID=0x2860)
+    Vendor:   NVIDIA
+    VRAM:     7948 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Unity Editor/6000.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Unity Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Unity Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.17.4'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-신명근"
+[Licensing::IpcConnector] LicenseClient-신명근 channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-신명근-6000.3.1" at "2025-12-17T19:05:35.2033558Z"
+Registering precompiled unity dll's ...
+Register platform support module: C:/Unity Editor/6000.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              68a5eb7a7d8549fbbb88324af34a5bcf
+  Correlation Id:          59de42ca91f0245af30488d335f8a9f5
+  External correlation Id: 6117749360641557676
+  Machine Id:              0M/ABMMGBGM+hP/9vJJ0T88awfw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-신명근-6000.3.1" (connect: 0.00s, validation: 0.00s, handshake: 1.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-신명근-6000.3.1-notifications" at "2025-12-17T19:05:36.214627Z"
+[Licensing::Module] Licensing Background thread has ended after 2.44s
+[Licensing::Module] Licensing is initialized (took 0.99s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569682563822-gwichana-UnityProStuXXXX
+  Product: Unity Student
+  Type: Assigned
+  Expiration: 2026-10-04T14:32:33Z
+Register platform support module: C:/Unity Editor/6000.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.993286 seconds.
+- Loaded All Assemblies, in  1.438 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 774 ms
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.298 seconds
+Domain Reload Profiling: 2731ms
+	BeginReloadAssembly (131ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (1046ms)
+	LoadAllAssembliesAndSetupDomain (188ms)
+		LoadAssemblies (128ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (183ms)
+				TypeCache.ScanAssembly (168ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1298ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1247ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (868ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (189ms)
+			ProcessInitializeOnLoadMethodAttributes (84ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.894 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.34 ms, found 4 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.917 seconds
+Domain Reload Profiling: 1804ms
+	BeginReloadAssembly (168ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (626ms)
+		LoadAssemblies (398ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (302ms)
+			TypeCache.Refresh (221ms)
+				TypeCache.ScanAssembly (203ms)
+			BuildScriptInfoCaches (62ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (917ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (752ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (165ms)
+			ProcessInitializeOnLoadAttributes (417ms)
+			ProcessInitializeOnLoadMethodAttributes (146ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 2.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7264 unused Assets / (4.8 MB). Loaded Objects now: 8084.
+Memory consumption went from 175.7 MB to 170.9 MB.
+Total: 13.970500 ms (FindLiveObjects: 0.769800 ms CreateObjectMapping: 0.835100 ms MarkObjects: 9.262800 ms  DeleteObjects: 3.101000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 405663.992325 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_92.asset
+  artifactKey: Guid(f5ae0ce5e4bdbc349b0dec394e0b3552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_92.asset using Guid(f5ae0ce5e4bdbc349b0dec394e0b3552) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6199b9af9eed6f1cfe4ca72618e6aa8e') in 0.1138069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_19.asset
+  artifactKey: Guid(5b1db6337bfe72a44b944118c6077470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_19.asset using Guid(5b1db6337bfe72a44b944118c6077470) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21e3bd1cebf095039f8469c1cfd6e198') in 0.0086749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_10.asset
+  artifactKey: Guid(ee705ab82ff2de84aad654d6fb7889b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_10.asset using Guid(ee705ab82ff2de84aad654d6fb7889b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1474d98dfd5000e87381ccd7f3b7f37') in 0.0094131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_116.asset
+  artifactKey: Guid(85c957b7e2ffff74b99c7bce17d8a5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_116.asset using Guid(85c957b7e2ffff74b99c7bce17d8a5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b180d00aa8ebb88d344bddfbbfc40977') in 0.0067688 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_90.asset
+  artifactKey: Guid(303845fc9009c054482427fc0fd37a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_90.asset using Guid(303845fc9009c054482427fc0fd37a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18d62bff2312b27b43440a56888e2cd9') in 0.0136151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_135.asset
+  artifactKey: Guid(0258c6cae9c23e244b0789af928d0c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_135.asset using Guid(0258c6cae9c23e244b0789af928d0c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be4f64c948002e8592c12d0b4f502d73') in 0.0141878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_91.asset
+  artifactKey: Guid(c4505405d93850544b0309e06c9844d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_91.asset using Guid(c4505405d93850544b0309e06c9844d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4589ae499056d86839b915eb09848f9') in 0.0166152 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_26.asset
+  artifactKey: Guid(bddc571d2f760294cadd0c5cb8d93ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_26.asset using Guid(bddc571d2f760294cadd0c5cb8d93ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '172b0384e2954bd6c4a4a7a72a1a9934') in 0.0164156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.256959 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_161.asset
+  artifactKey: Guid(de0b77ba7a3070d4c8a2dcd9accd3880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_161.asset using Guid(de0b77ba7a3070d4c8a2dcd9accd3880) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6d23d202b4dc06fd3141e802506c945') in 0.0049406 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_167.asset
+  artifactKey: Guid(277a90436c4557447847d3aac6474245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_167.asset using Guid(277a90436c4557447847d3aac6474245) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '778b3545b03baa1e94272181b2c8c06e') in 0.0051517 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_173.asset
+  artifactKey: Guid(1be7f79aee3753c4393be0ee8fa2caf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_173.asset using Guid(1be7f79aee3753c4393be0ee8fa2caf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4754e263d7f69638f0f8fb7f37aaa80') in 0.0123142 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.151393 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_177.asset
+  artifactKey: Guid(56c9b3ee1b05a0243abfae985e99a3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_177.asset using Guid(56c9b3ee1b05a0243abfae985e99a3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99e8930acb3609dbfdd6372fe470963f') in 0.0050362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_183.asset
+  artifactKey: Guid(e390ccce65dde2540b6fc966f7e7787e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_183.asset using Guid(e390ccce65dde2540b6fc966f7e7787e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cacb9b17542c397f9feff74b80d389a0') in 0.0053157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_192.asset
+  artifactKey: Guid(c4fbd9b513341e04e82fd9587f013f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_192.asset using Guid(c4fbd9b513341e04e82fd9587f013f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75d561f221eaa115f3f6bbd0e48bd664') in 0.0050711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_197.asset
+  artifactKey: Guid(5973d8c14c5ea444a911206eb12c253a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_197.asset using Guid(5973d8c14c5ea444a911206eb12c253a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd08c3e96d850f7e89ac4e14f7a158845') in 0.0059864 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.233121 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_201.asset
+  artifactKey: Guid(6699cef651e62cb46ab5449b47420fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_201.asset using Guid(6699cef651e62cb46ab5449b47420fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1448a30c4b71d8ef41bcdc2f39f780fb') in 0.0066638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_223.asset
+  artifactKey: Guid(6d6901269769a0f4ab29a9b1d1c58e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_223.asset using Guid(6d6901269769a0f4ab29a9b1d1c58e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c9a87e3ae60e70c0c601db8b6a54581') in 0.004928 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_245.asset
+  artifactKey: Guid(7c8fee01982648e45b706431c21ee298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_245.asset using Guid(7c8fee01982648e45b706431c21ee298) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a80464246d9d6a1c0644acf1c08c409') in 0.0112862 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_563.asset
+  artifactKey: Guid(ebfe2424986135a4e86a7396458f05ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_563.asset using Guid(ebfe2424986135a4e86a7396458f05ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e29e5425169b05401e499369c0d1bb32') in 0.0057129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_575.asset
+  artifactKey: Guid(e6080675c6ae83f488a1f80645650a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_575.asset using Guid(e6080675c6ae83f488a1f80645650a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4804c05da8504e7acb380537ef38453d') in 0.0049502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_934.asset
+  artifactKey: Guid(9bdb5de22b342c04f9674622f1b675f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_934.asset using Guid(9bdb5de22b342c04f9674622f1b675f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f16819740a860969db72eeabe6a9d46') in 0.0114124 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1084.asset
+  artifactKey: Guid(1acddc57bfd67cf4da16fb2413061c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1084.asset using Guid(1acddc57bfd67cf4da16fb2413061c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1894a22f23d4e6c1a7a35151f86d5e40') in 0.005754 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1104.asset
+  artifactKey: Guid(1510296a96c50c44090b2b79705e4a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1104.asset using Guid(1510296a96c50c44090b2b79705e4a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c404b1e8437ec28730f0bcae6772912') in 0.0119569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1223.asset
+  artifactKey: Guid(4511b660c9a5e9d4d99b7774f4032b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1223.asset using Guid(4511b660c9a5e9d4d99b7774f4032b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8772d1e0f838882a6764435e008d6b7f') in 0.0116065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1293.asset
+  artifactKey: Guid(9c84274c200e1e64cbbab78cf81eb70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1293.asset using Guid(9c84274c200e1e64cbbab78cf81eb70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8c52e02b34e8a297dcfa16c93a0ed2f') in 0.0051063 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1319.asset
+  artifactKey: Guid(72a9008589779574faac26f89cc6c5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1319.asset using Guid(72a9008589779574faac26f89cc6c5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c990d57bac3f63815eb17d2cf5fcd86') in 0.0190988 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1371.asset
+  artifactKey: Guid(4c5ae0d67ef79f04e94871819cf14a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1371.asset using Guid(4c5ae0d67ef79f04e94871819cf14a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b02d11fc9d62ee4841cd597f0fed9eee') in 0.0119069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1433.asset
+  artifactKey: Guid(a77fc3fad871fe644908050778bdca76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1433.asset using Guid(a77fc3fad871fe644908050778bdca76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a579edc536c3144f122a8a2ef7182d4') in 0.0115045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1434.asset
+  artifactKey: Guid(b1e17652556fe3a4699115eab1007959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1434.asset using Guid(b1e17652556fe3a4699115eab1007959) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e62ce9602a0ac0edc7e781ad6c0e2c58') in 0.0061982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1323.asset
+  artifactKey: Guid(c04474e790a1f92428618ec25e7382d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1323.asset using Guid(c04474e790a1f92428618ec25e7382d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a33d614c323f27372d3067373bfec3b1') in 0.0111443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1501.asset
+  artifactKey: Guid(84bd4b9c891c6754ea2c217ee0659ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1501.asset using Guid(84bd4b9c891c6754ea2c217ee0659ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13ab99e20eeffd2be8847545a766f6db') in 0.0078853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1113.asset
+  artifactKey: Guid(734055c36878a1743bc0f52654859dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1113.asset using Guid(734055c36878a1743bc0f52654859dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af30c1a7496b4897f191e2b307fb6c3c') in 0.0049315 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1336.asset
+  artifactKey: Guid(087ed69a487651f4697cfe40ea2c95ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1336.asset using Guid(087ed69a487651f4697cfe40ea2c95ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f74547c5c946435428e535c83e0c3cc') in 0.0050732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1369.asset
+  artifactKey: Guid(0d307d75738c71b4db5c006c88676527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1369.asset using Guid(0d307d75738c71b4db5c006c88676527) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6235e845e18bfc3e62b5a454fbc763da') in 0.0132965 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1492.asset
+  artifactKey: Guid(e29fc20ed6d06dd49b4a2ffcc38cc2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1492.asset using Guid(e29fc20ed6d06dd49b4a2ffcc38cc2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a3e909244f28508b2fe5d0ca298f0b8') in 0.0209521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1553.asset
+  artifactKey: Guid(0c924e7d99da9084595bc5d948e0c79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1553.asset using Guid(0c924e7d99da9084595bc5d948e0c79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7b92e5417cd60981a46679769ce3119') in 0.0145468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_249.asset
+  artifactKey: Guid(bbe5b07b9a7bffd4bb09426f4c59c07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_249.asset using Guid(bbe5b07b9a7bffd4bb09426f4c59c07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e46c0979b16df056594471ae0876adee') in 0.0065745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_919.asset
+  artifactKey: Guid(216d46e0e004ff74b9dfdc2f891223ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_919.asset using Guid(216d46e0e004ff74b9dfdc2f891223ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c408d5d0451798c4e7b357b328306dbf') in 0.0069329 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_551.asset
+  artifactKey: Guid(b48d629a4351c3b4887bd45225eed3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_551.asset using Guid(b48d629a4351c3b4887bd45225eed3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e95ecc99a5fc459799467b432cce0be') in 0.0053852 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_228.asset
+  artifactKey: Guid(f9c5c5ecbe7f4aa4a833140336a1ddda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_228.asset using Guid(f9c5c5ecbe7f4aa4a833140336a1ddda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9994401f5f4b0da797a4afadb0f717fc') in 0.0064706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1536.asset
+  artifactKey: Guid(43b0d130315c64f48bf9a55894d9006b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1536.asset using Guid(43b0d130315c64f48bf9a55894d9006b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b1b4c485251497ff7ecb0f4a1d14ef5') in 0.0136669 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1491.asset
+  artifactKey: Guid(cf72d66158bc27446b587c7884f83c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1491.asset using Guid(cf72d66158bc27446b587c7884f83c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1465b7ab8ec299ed4103966ddb055104') in 0.0207025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1449.asset
+  artifactKey: Guid(cc61b11dcf7100746a24b575fbd9e06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1449.asset using Guid(cc61b11dcf7100746a24b575fbd9e06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cee34c3fa3d1604c58504bc5caae3ee1') in 0.0149438 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1413.asset
+  artifactKey: Guid(689cb27a3fdcbe440b2b87fe4a1f8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1413.asset using Guid(689cb27a3fdcbe440b2b87fe4a1f8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0cafcc76167a8cf6dbd9cc5f768c187e') in 0.0205333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1410.asset
+  artifactKey: Guid(77a218e3f4396a146be28b6096291206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1410.asset using Guid(77a218e3f4396a146be28b6096291206) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '038e7d81296fd0b062bff09cad947a04') in 0.0074185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1209.asset
+  artifactKey: Guid(cd3820103bc8153459fef3ab792740fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1209.asset using Guid(cd3820103bc8153459fef3ab792740fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49bc28243a88cf83fdf130a8a91e494c') in 0.0135948 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1443.asset
+  artifactKey: Guid(9ba334e727d39804da54dbe866fdebd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1443.asset using Guid(9ba334e727d39804da54dbe866fdebd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '44156e98f4eece4c3263ba59bf8317a6') in 0.018741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1470.asset
+  artifactKey: Guid(33312ec381c78c0468cd57cfbbb14751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1470.asset using Guid(33312ec381c78c0468cd57cfbbb14751) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5539c66170e0cc5226023ef4fe9bef90') in 0.0068573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1263.asset
+  artifactKey: Guid(ffa3bee1d31a1ab4da289d4fcb822516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1263.asset using Guid(ffa3bee1d31a1ab4da289d4fcb822516) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3791bf755930c7f570a64feee01bfc7') in 0.0061066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_573.asset
+  artifactKey: Guid(d678b33f4d361734a85ab6badd2715bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_573.asset using Guid(d678b33f4d361734a85ab6badd2715bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d14acadf8511d54f3ddd6f9e357426a') in 0.0053491 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_920.asset
+  artifactKey: Guid(0474a231ccc77004e92dceb332b589be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_920.asset using Guid(0474a231ccc77004e92dceb332b589be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8bd133bc256273331c3ad7d907995a5f') in 0.007217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_261.asset
+  artifactKey: Guid(18be22b4c2ed71745bc67fc27652c5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_261.asset using Guid(18be22b4c2ed71745bc67fc27652c5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43fe879ec1be1133364be7068b9c4518') in 0.0083297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1381.asset
+  artifactKey: Guid(03ffdcd4a83379f4b9ba5915f8f93cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1381.asset using Guid(03ffdcd4a83379f4b9ba5915f8f93cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90a46e8457b3a5481caf6ee78ab833cf') in 0.0111597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1172.asset
+  artifactKey: Guid(fcffdb00aac84294b8ae0c23eff1ee8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1172.asset using Guid(fcffdb00aac84294b8ae0c23eff1ee8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02dd95d6903dfb8424aba729e31889a1') in 0.0116572 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_767.asset
+  artifactKey: Guid(0435916829aa341439e8d1a998d77468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_767.asset using Guid(0435916829aa341439e8d1a998d77468) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b47baf67880bb8b4ffeec354025068a') in 0.0055699 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_363.asset
+  artifactKey: Guid(4d90516f3bc170344aca7bae2bd3aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_363.asset using Guid(4d90516f3bc170344aca7bae2bd3aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c8bc4387535e00a05426b80a791e1bf') in 0.0064492 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_385.asset
+  artifactKey: Guid(97018a12934b9f646995396e2212b4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_385.asset using Guid(97018a12934b9f646995396e2212b4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43a599d1d4960c15f7fa32bcbe24b1dd') in 0.0058805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_778.asset
+  artifactKey: Guid(c9a9e3ffacd6685449f752835a83805c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_778.asset using Guid(c9a9e3ffacd6685449f752835a83805c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4371a34c0de6691f160424121e473ff') in 0.0060461 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_382.asset
+  artifactKey: Guid(f4f3b7acda074a349aa44f5bd2c1832e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_382.asset using Guid(f4f3b7acda074a349aa44f5bd2c1832e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3f499abb280f23242f7c4a59b53137f') in 0.0049883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_752.asset
+  artifactKey: Guid(7bb505de48347db4c996be89bc476377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_752.asset using Guid(7bb505de48347db4c996be89bc476377) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2efa655f93d44d0960168cae00207df') in 0.0054074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1155.asset
+  artifactKey: Guid(95cbd8a6e8d2ad64dab201333e0b343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1155.asset using Guid(95cbd8a6e8d2ad64dab201333e0b343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d353630cf64a323dea690353b5aec82') in 0.0054789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1162.asset
+  artifactKey: Guid(1395e9c897ee3584bbf223996db41707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1162.asset using Guid(1395e9c897ee3584bbf223996db41707) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '359b61be8d9a8821d05976ec070c5fc5') in 0.0125785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1375.asset
+  artifactKey: Guid(6c68a8df20167e5408f4667ce8c7607f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1375.asset using Guid(6c68a8df20167e5408f4667ce8c7607f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef1346d8f3b02ec1e7cc8bdd844057d7') in 0.0120261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1259.asset
+  artifactKey: Guid(22785bdd0436cf745ae7204d834d4e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1259.asset using Guid(22785bdd0436cf745ae7204d834d4e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a6eb318db6b440d78f345612f6c4e22f') in 0.0052946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1550.asset
+  artifactKey: Guid(c36d57b5c230a4742865c51fdbb4aab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1550.asset using Guid(c36d57b5c230a4742865c51fdbb4aab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5771c9c7f5d674de6bf8856aa57c2de1') in 0.013746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1091.asset
+  artifactKey: Guid(bfac324ae03622145a5a0d7ff50a5cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1091.asset using Guid(bfac324ae03622145a5a0d7ff50a5cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1fa8ceac9d70c4776630dd1039f8fa1c') in 0.0120457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1295.asset
+  artifactKey: Guid(7e5b965b3c523534b9b77b047346de4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1295.asset using Guid(7e5b965b3c523534b9b77b047346de4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad4842a164ad19b41ddefe3abbc34faf') in 0.0057623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_263.asset
+  artifactKey: Guid(290dedd10e25d094ba360d3ef9ee1733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_263.asset using Guid(290dedd10e25d094ba360d3ef9ee1733) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74fa2c8354d2f0e46d2bd50063fb24ef') in 0.0053262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_580.asset
+  artifactKey: Guid(6020d8179764db34eaab2971c396eb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_580.asset using Guid(6020d8179764db34eaab2971c396eb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a68fc4965a03b7eaf26d180d9e318e4c') in 0.0060053 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_760.asset
+  artifactKey: Guid(4762fb6635beb1a439a7ad0867bf5379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_760.asset using Guid(4762fb6635beb1a439a7ad0867bf5379) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d8f30057ddc3a0ee4b292012c7ecc85') in 0.0052425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_379.asset
+  artifactKey: Guid(80e904d157ca6c047a02555d52818048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_379.asset using Guid(80e904d157ca6c047a02555d52818048) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e05782f6013bf3fccbcda33421012e6') in 0.0139844 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1466.asset
+  artifactKey: Guid(ae826ef91e84d434c9107b4e2f9600ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1466.asset using Guid(ae826ef91e84d434c9107b4e2f9600ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1442c450ee2df6766eeb3125bfbbfe19') in 0.0055683 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1288.asset
+  artifactKey: Guid(8805b22136c2fcf4aa47264621e81b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1288.asset using Guid(8805b22136c2fcf4aa47264621e81b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8bac150c76b070c720440b81f1ed6810') in 0.0059401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1143.asset
+  artifactKey: Guid(c3cd1b16066d4b04da701a4f56b7a755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1143.asset using Guid(c3cd1b16066d4b04da701a4f56b7a755) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '337f3873868cb654fdcdbe5f7bfd4dff') in 0.0070247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1346.asset
+  artifactKey: Guid(7f6d48f5fa27d3240a8031324234ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1346.asset using Guid(7f6d48f5fa27d3240a8031324234ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ffc1adcc015eb81a719f8f9c58a77c5') in 0.0050819 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1447.asset
+  artifactKey: Guid(c95dda707f3599a41a43aedfa2feea01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1447.asset using Guid(c95dda707f3599a41a43aedfa2feea01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ba2b7a00624353a52280d0e73d0bd27') in 0.0120408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1368.asset
+  artifactKey: Guid(71c55405fa19a0046824bc1d792713cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1368.asset using Guid(71c55405fa19a0046824bc1d792713cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e4ced01bb7e076ab708bd34ae02bbb0') in 0.0055828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1087.asset
+  artifactKey: Guid(3602a4a8c35b35347ac39bfe574f6ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1087.asset using Guid(3602a4a8c35b35347ac39bfe574f6ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28d14acfae05e8d175d22a8f3b1c4c38') in 0.0061636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1436.asset
+  artifactKey: Guid(af3e2401f64b6c04ca16727694f56111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1436.asset using Guid(af3e2401f64b6c04ca16727694f56111) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a2344ac323d3cca5a8b254cbb737b2e') in 0.0061124 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_930.asset
+  artifactKey: Guid(0b4288b2ba6dd194ab8bb6a42765264b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_930.asset using Guid(0b4288b2ba6dd194ab8bb6a42765264b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf4460eabc76ea6f5096c6b45255f9f7') in 0.0134895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1539.asset
+  artifactKey: Guid(439c471021b7b7643b8dfa5dbd5e8486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1539.asset using Guid(439c471021b7b7643b8dfa5dbd5e8486) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59053a7e7b71b1d639a0e06c98c524a1') in 0.0064875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1452.asset
+  artifactKey: Guid(baaaf5bda00d9444b95d536c7ca5033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1452.asset using Guid(baaaf5bda00d9444b95d536c7ca5033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eab84ad4af42e974ec3157835eec68df') in 0.0064975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_362.asset
+  artifactKey: Guid(6dfe34409392ce04e8230ffb3895b9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_362.asset using Guid(6dfe34409392ce04e8230ffb3895b9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd859faa6ae3b6c785cb763e0bbc42d7d') in 0.0053522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1320.asset
+  artifactKey: Guid(2f21d2432d0a73840ae9bdb04c78ccce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1320.asset using Guid(2f21d2432d0a73840ae9bdb04c78ccce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e812de32a2b99bb4a99fd03834e41166') in 0.0065566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1424.asset
+  artifactKey: Guid(a897b79d564d41f4bb281c480c56dac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1424.asset using Guid(a897b79d564d41f4bb281c480c56dac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df4690d3fd2c88b32b78128227592e6f') in 0.007005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1304.asset
+  artifactKey: Guid(bcd0792ff3bc8104fb1cba4ec54b842f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1304.asset using Guid(bcd0792ff3bc8104fb1cba4ec54b842f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93702d5505ccadcfba38ad7758eba751') in 0.0065386 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1472.asset
+  artifactKey: Guid(d43e272ad03463f499a4c04e0bef897e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1472.asset using Guid(d43e272ad03463f499a4c04e0bef897e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e686db9e5c58bbd11ee8d7c031765e18') in 0.0057223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_366.asset
+  artifactKey: Guid(c10d98e18729ee4409fd2296bcc72e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_366.asset using Guid(c10d98e18729ee4409fd2296bcc72e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '612c910768d915f8ec6107c600302cc5') in 0.0056102 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1551.asset
+  artifactKey: Guid(e0746375a6827204588804c1e1c91a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1551.asset using Guid(e0746375a6827204588804c1e1c91a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff39d0bb86856828b3c482f9b12c2060') in 0.0064498 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1306.asset
+  artifactKey: Guid(aae1263d09db14d4b9dd834e57dfb678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1306.asset using Guid(aae1263d09db14d4b9dd834e57dfb678) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1dd32131a7f4903d71451d09ae549752') in 0.00612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_772.asset
+  artifactKey: Guid(b6494dc023006d446aff18a1514a608c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_772.asset using Guid(b6494dc023006d446aff18a1514a608c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb0004ae5b81fec4197eb0491fd2a6ec') in 0.0057502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1176.asset
+  artifactKey: Guid(7c3eade25566ca34a970b355d53b9788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1176.asset using Guid(7c3eade25566ca34a970b355d53b9788) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83e688d449726c84e69d1a2b561c7610') in 0.0057211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1469.asset
+  artifactKey: Guid(ead1cfbb0eaed9c448fb1c8a1a5b9681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1469.asset using Guid(ead1cfbb0eaed9c448fb1c8a1a5b9681) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9dfb7fa99f63fedd7cf4fcc17feaf94a') in 0.0058648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1145.asset
+  artifactKey: Guid(83a20051d8610484aa1ffb94e6e5e89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1145.asset using Guid(83a20051d8610484aa1ffb94e6e5e89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e4546a8cdf2da54a38d5802bf329f47') in 0.0061049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1412.asset
+  artifactKey: Guid(390cbf81eabe97f488abc0a372614613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1412.asset using Guid(390cbf81eabe97f488abc0a372614613) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11e88494d5d1749a54f731f753260e51') in 0.0062969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1475.asset
+  artifactKey: Guid(b6c9a55737ce77b448d5aa68a874abfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1475.asset using Guid(b6c9a55737ce77b448d5aa68a874abfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19da6b8ba63737a8a02314df840bcfef') in 0.0137697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_544.asset
+  artifactKey: Guid(e52c27b33f8cf834f84de94c8291029f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_544.asset using Guid(e52c27b33f8cf834f84de94c8291029f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7237a2bc14074109ea3111ab507179c') in 0.0064115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_557.asset
+  artifactKey: Guid(c6ed28507158bc14e804aa2d1b2f6cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_557.asset using Guid(c6ed28507158bc14e804aa2d1b2f6cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3ace89beff1d5aca82784e138eb3f75') in 0.0073039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1216.asset
+  artifactKey: Guid(0aed839aeb882604bb64ffaa24575657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1216.asset using Guid(0aed839aeb882604bb64ffaa24575657) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '259b49fdf2ae66867f9869dd7be102c6') in 0.0061964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_757.asset
+  artifactKey: Guid(0897140299a70b34b970d837df9044fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_757.asset using Guid(0897140299a70b34b970d837df9044fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '063bc34d07b363a0c9223e36271f3c4e') in 0.0053986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1315.asset
+  artifactKey: Guid(1c7d997510d185047bab79bbab539a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1315.asset using Guid(1c7d997510d185047bab79bbab539a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a110c737684dc914f2fc2c7a44008e6') in 0.0069636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1462.asset
+  artifactKey: Guid(ad2ed5fd56cf45b4ab2169e4c9ae9b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1462.asset using Guid(ad2ed5fd56cf45b4ab2169e4c9ae9b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a71deb5fe9aad74fc2cba8fe6373f364') in 0.0057436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1420.asset
+  artifactKey: Guid(1218c4023ded2254eae8a8a42fbe7a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1420.asset using Guid(1218c4023ded2254eae8a8a42fbe7a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ee3aaa1c1220511bcd65fac8fc929e0') in 0.0060151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1437.asset
+  artifactKey: Guid(5bf757180309c704da0153ef28e79609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1437.asset using Guid(5bf757180309c704da0153ef28e79609) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a9dc5f275facdd6e9df72d0555b816b') in 0.0059141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1505.asset
+  artifactKey: Guid(4044dc5847f772e42b10722b35563b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1505.asset using Guid(4044dc5847f772e42b10722b35563b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c68106ad2a001b1ea3c2ce371aec2e44') in 0.0062858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_221.asset
+  artifactKey: Guid(ce76d0ef42a33fe49aa1ebfd4df777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_221.asset using Guid(ce76d0ef42a33fe49aa1ebfd4df777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1402646ea9631ee0dbab5f4de1497842') in 0.0058334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1554.asset
+  artifactKey: Guid(2c6ef09139646214cb1edca0a9fea286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1554.asset using Guid(2c6ef09139646214cb1edca0a9fea286) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2313eded3cb80645559000eb46310d1e') in 0.0065123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1096.asset
+  artifactKey: Guid(54a6ee384879e5a40a6cf649dda3f989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1096.asset using Guid(54a6ee384879e5a40a6cf649dda3f989) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9465ab7f1be2d4cbecca799556dff138') in 0.0057172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1360.asset
+  artifactKey: Guid(fec32447acaddf04ab41a18664448f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1360.asset using Guid(fec32447acaddf04ab41a18664448f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ddef883359259c644acb6bc2ea6c7145') in 0.0144715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1518.asset
+  artifactKey: Guid(30a6d10f86401df48b636926af3bef28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1518.asset using Guid(30a6d10f86401df48b636926af3bef28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72ee3c68096c40b7b2ca264223368fce') in 0.0140633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1215.asset
+  artifactKey: Guid(fb5dfc702b418fe4982704d1f09fc23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1215.asset using Guid(fb5dfc702b418fe4982704d1f09fc23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b202b7502bfcb5fcd884a2faa720f766') in 0.0058335 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_237.asset
+  artifactKey: Guid(725986d91a402c740aa876c563594fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_237.asset using Guid(725986d91a402c740aa876c563594fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd17335f127dad5c131b931b21e042a4') in 0.0135185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1086.asset
+  artifactKey: Guid(a5aed50f86b76914081d847b30f04d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1086.asset using Guid(a5aed50f86b76914081d847b30f04d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c0aaad732172cdcbeb75d6967f8ca4a') in 0.0065237 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1486.asset
+  artifactKey: Guid(63f36a0026ebadb4ba2d942ba671966a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1486.asset using Guid(63f36a0026ebadb4ba2d942ba671966a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62acc436c54cd89381475836a43efd2d') in 0.0059942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_786.asset
+  artifactKey: Guid(0355047c570af3c49ba29bf7b3befc6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_786.asset using Guid(0355047c570af3c49ba29bf7b3befc6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b183a00ea27c2673e232a0402716ade') in 0.0060502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1453.asset
+  artifactKey: Guid(8cd285863741eca4681d8877776fa082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1453.asset using Guid(8cd285863741eca4681d8877776fa082) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edb5281d8b38e0cf4292a83e28c8efae') in 0.0054026 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.901100 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_265.asset
+  artifactKey: Guid(22c1524c38b32c4469432b038119e857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_265.asset using Guid(22c1524c38b32c4469432b038119e857) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '969e140b8652e8ebb629476c9e5ea6aa') in 0.0157438 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_272.asset
+  artifactKey: Guid(c046b1edc3e3d914e99f92e06ea07a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_272.asset using Guid(c046b1edc3e3d914e99f92e06ea07a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cfbe5e7efe0f5161c0adce7adcb0fb65') in 0.0066082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.056098 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_279.asset
+  artifactKey: Guid(5962542d9073a254dabe8b9b63b87a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_279.asset using Guid(5962542d9073a254dabe8b9b63b87a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '147ad195d5e913230750cd5672de054d') in 0.0100307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.910744 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_287.asset
+  artifactKey: Guid(a756a3edbbef70742b145feb432ed6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_287.asset using Guid(a756a3edbbef70742b145feb432ed6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06dd560cf6d0ba360059842a5394663e') in 0.0146775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_295.asset
+  artifactKey: Guid(74e135f860807cb48bc27299d6eb928a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_295.asset using Guid(74e135f860807cb48bc27299d6eb928a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '476403349c9d1e60b6baaae3f41e4d95') in 0.0073534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_297.asset
+  artifactKey: Guid(fed0cfadf8c5b414b8a9ba18d86ae517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_297.asset using Guid(fed0cfadf8c5b414b8a9ba18d86ae517) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d792f4c0d4172807cf294f1ae363af0') in 0.0116713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.421499 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_305.asset
+  artifactKey: Guid(9763b31d4914fe64399f999e3775d7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_305.asset using Guid(9763b31d4914fe64399f999e3775d7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9d00bb765838f5810e3a9df53aabaf1') in 0.0065026 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056406 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_313.asset
+  artifactKey: Guid(2d5d88216df47bd46b16a613c7fa03c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_313.asset using Guid(2d5d88216df47bd46b16a613c7fa03c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c41dfba62b71e3fc7dd150041eda71e') in 0.0218476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.592861 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_321.asset
+  artifactKey: Guid(f59667d41a52d2549af39291fa1d250b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_321.asset using Guid(f59667d41a52d2549af39291fa1d250b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf05e1e82ef31a1e4d54e3d0beae0d39') in 0.0057228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_338.asset
+  artifactKey: Guid(4800c36d34d3bfd44acc459b72d8f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_338.asset using Guid(4800c36d34d3bfd44acc459b72d8f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2112f67c5bee975f1d6a1e1e50cf2df3') in 0.0165489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_339.asset
+  artifactKey: Guid(930146d5341a94d40a0efdd37b7706a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_339.asset using Guid(930146d5341a94d40a0efdd37b7706a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c933ce6fa0d31f1cc7956c1950855c4') in 0.0126502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.737881 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_345.asset
+  artifactKey: Guid(39bcda79cf7252847bc4e0c83a7ab0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_345.asset using Guid(39bcda79cf7252847bc4e0c83a7ab0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd06a01ede70ab6835737a3720eda835d') in 0.0114168 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017594 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_353.asset
+  artifactKey: Guid(ee84663f7d1695e4b8feabbeee82c876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_353.asset using Guid(ee84663f7d1695e4b8feabbeee82c876) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1abedd9591ab40adf1e2539b1be029f8') in 0.0227115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.099926 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_401.asset
+  artifactKey: Guid(233c2e30bc31d0544a4051a7e8b28d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_401.asset using Guid(233c2e30bc31d0544a4051a7e8b28d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6782f41b3015564436777d36a2860334') in 0.0089215 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.346032 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_403.asset
+  artifactKey: Guid(7303cf9a03590b341bec31fc571f4a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_403.asset using Guid(7303cf9a03590b341bec31fc571f4a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9527bc15de975949e3e83fa738c0caa7') in 0.0145222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.311026 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_411.asset
+  artifactKey: Guid(beab55c61db511149b503dcf879a8cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_411.asset using Guid(beab55c61db511149b503dcf879a8cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd4ea6adf69dd9fd9cd0849199d7c1ca') in 0.0131846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.204228 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_419.asset
+  artifactKey: Guid(499b3bb5b8b46ab4ca6bd19b0256b094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_419.asset using Guid(499b3bb5b8b46ab4ca6bd19b0256b094) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1c7d7f8579057d598bef37fe42ee030') in 0.0062951 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.131254 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_427.asset
+  artifactKey: Guid(462fe9b0b79274d47b447572c6439bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_427.asset using Guid(462fe9b0b79274d47b447572c6439bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46ab7530f99dfe8549b9aa8a6b0cbf17') in 0.018187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_447.asset
+  artifactKey: Guid(2e6368b6f08cca24aac03c05dfff25d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_447.asset using Guid(2e6368b6f08cca24aac03c05dfff25d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a91bd3f36c36e0b7474c94b94d7da980') in 0.0144632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_444.asset
+  artifactKey: Guid(d51e7cdae6317cc4091f2e57c8c685af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_444.asset using Guid(d51e7cdae6317cc4091f2e57c8c685af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '962503d5875d64197bba0d9cd5123540') in 0.0334695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.476046 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_450.asset
+  artifactKey: Guid(356c9d4320c7cfa47a8af5f49d730f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_450.asset using Guid(356c9d4320c7cfa47a8af5f49d730f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f64a0c14480a613a2cbe63b67224946') in 0.0053418 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.516929 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_458.asset
+  artifactKey: Guid(93a0c6c2038bced4da4a541fdb467d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_458.asset using Guid(93a0c6c2038bced4da4a541fdb467d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1166836747cb7c454bf41692cf9f5c5b') in 0.0069218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.481651 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_466.asset
+  artifactKey: Guid(8b66d92a4d92d6a49b124c4c488951cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_466.asset using Guid(8b66d92a4d92d6a49b124c4c488951cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c5435c68785aca69a61528409574133') in 0.009623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.629627 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_473.asset
+  artifactKey: Guid(2cd37e219e4aee9429a0d894b311b240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_473.asset using Guid(2cd37e219e4aee9429a0d894b311b240) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35792faee8a1afa886eecbc74d957ef0') in 0.0120096 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.844493 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_481.asset
+  artifactKey: Guid(fd5db570e9fecd347b5d1fad4ce7e306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_481.asset using Guid(fd5db570e9fecd347b5d1fad4ce7e306) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f30f0bf392dd50bc4e0fb6065ac22bc9') in 0.0133965 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053812 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_489.asset
+  artifactKey: Guid(989b05a8702bcea44a1baca41be6e209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_489.asset using Guid(989b05a8702bcea44a1baca41be6e209) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ec6042027171332992a92ef8f0f0159') in 0.0124601 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.082491 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_497.asset
+  artifactKey: Guid(e718a967d76c65540b8d6d031d054569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_497.asset using Guid(e718a967d76c65540b8d6d031d054569) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21677a1e7e8c3c25569b23ec14e4fb35') in 0.0077093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_509.asset
+  artifactKey: Guid(4da5c8772ef0b8b47947854a5d3af745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_509.asset using Guid(4da5c8772ef0b8b47947854a5d3af745) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1833a785f40a0283c7c089437a71188b') in 0.0081551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_516.asset
+  artifactKey: Guid(d5bb7228cf471bb4fb7ce360b7626f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_516.asset using Guid(d5bb7228cf471bb4fb7ce360b7626f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad186381dacb0fcaac71c5f6c44295f1') in 0.0067827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.143541 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_519.asset
+  artifactKey: Guid(f2bfc75cc4da0a64192251077ad9c1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_519.asset using Guid(f2bfc75cc4da0a64192251077ad9c1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34644479e251a0bf788c71326c1c39ec') in 0.006519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.533334 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_527.asset
+  artifactKey: Guid(0b6fbd851c2db824180b5cc07450ddce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_527.asset using Guid(0b6fbd851c2db824180b5cc07450ddce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fdc9d949ba6029660c49d201df42dd3f') in 0.0097651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.210578 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_532.asset
+  artifactKey: Guid(bc288459e2d035449846d9eaa034c182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_532.asset using Guid(bc288459e2d035449846d9eaa034c182) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c5e8f354e466940ce902250ff0ef9d19') in 0.0058838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022337 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_540.asset
+  artifactKey: Guid(294240f3a47b31c47b99efccf6fbd923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_540.asset using Guid(294240f3a47b31c47b99efccf6fbd923) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39201454ca2e6282b4d799723a201fae') in 0.0156332 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.404786 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_585.asset
+  artifactKey: Guid(d29aba3cf9064674a9ae30faf23d0f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_585.asset using Guid(d29aba3cf9064674a9ae30faf23d0f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c091a298f12c23527ddb40ea44f4a65') in 0.0231614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.221466 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_589.asset
+  artifactKey: Guid(adceca26ed1f0024890eba0e99d17a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_589.asset using Guid(adceca26ed1f0024890eba0e99d17a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b5cbac57a8ae6acc19ab523e9aac099') in 0.017648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_609.asset
+  artifactKey: Guid(a9ca072f4e95c484f9dcb6a0964c9104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_609.asset using Guid(a9ca072f4e95c484f9dcb6a0964c9104) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f63e2eadd612677edd785e134f24b948') in 0.0067773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_613.asset
+  artifactKey: Guid(2f5e0b26823d91b49bfa80fdd1e1563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_613.asset using Guid(2f5e0b26823d91b49bfa80fdd1e1563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd45fd0861f7a9514ff119af9cda30515') in 0.0062551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_606.asset
+  artifactKey: Guid(d00ce2817b54aee45849663919dd1b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_606.asset using Guid(d00ce2817b54aee45849663919dd1b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86f621a089c2ddde3f848c61e3fbd7db') in 0.0066136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.149001 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_617.asset
+  artifactKey: Guid(c47f6257280b7684d824553ca43a0fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_617.asset using Guid(c47f6257280b7684d824553ca43a0fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a3d0617009237fabe3d2cc131342ea3') in 0.0075709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_626.asset
+  artifactKey: Guid(bf31b5b9043ef764fb292644991bb0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_626.asset using Guid(bf31b5b9043ef764fb292644991bb0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ee3eeb54e8d93d3bdd76a4c86792748') in 0.0069889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_632.asset
+  artifactKey: Guid(a4a3666d321c5dd49b641a3895a628d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_632.asset using Guid(a4a3666d321c5dd49b641a3895a628d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc9a5aa90c1d9865e4ab2a893b23f157') in 0.0112235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_639.asset
+  artifactKey: Guid(87a056405e0823e4fa4743b2fb5148f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_639.asset using Guid(87a056405e0823e4fa4743b2fb5148f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dadae3daa3fd6ab1c4caba467461b081') in 0.00918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_644.asset
+  artifactKey: Guid(1c70c9003fb3b4541bee05eaedb77cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_644.asset using Guid(1c70c9003fb3b4541bee05eaedb77cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e02243d994fd57f95dd5172b785843a9') in 0.0061199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.289055 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_649.asset
+  artifactKey: Guid(054d09c21be56e54ab64fa1b33e3666f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_649.asset using Guid(054d09c21be56e54ab64fa1b33e3666f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd57db434901276d6728699b3b5df66d3') in 0.0054649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_657.asset
+  artifactKey: Guid(91376eaa178a3ad47ab604c5a5e4b0f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_657.asset using Guid(91376eaa178a3ad47ab604c5a5e4b0f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52dc1b2798806060cb1cb75a8d3a94fa') in 0.0053145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.274247 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_665.asset
+  artifactKey: Guid(ec0e0bbf41f66de4f9e1dca7d41e5136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_665.asset using Guid(ec0e0bbf41f66de4f9e1dca7d41e5136) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f751bceaeb9234b60e0342ed1fd68d3') in 0.0058857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_675.asset
+  artifactKey: Guid(75ee3d48f4f29e747b7a8fae2ec253f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_675.asset using Guid(75ee3d48f4f29e747b7a8fae2ec253f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8896a87f2125f5e7a44f3e95f477c712') in 0.0041625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.310257 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_681.asset
+  artifactKey: Guid(261c9632958355a448a6b9d86c56681a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_681.asset using Guid(261c9632958355a448a6b9d86c56681a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '644b12701477c6828388d3fd211327b5') in 0.0048979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_689.asset
+  artifactKey: Guid(4b00bfefdf3970b4c92b8cf6c44a6903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_689.asset using Guid(4b00bfefdf3970b4c92b8cf6c44a6903) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f655b4b65ac8098eb01d461279f0322') in 0.0048811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_696.asset
+  artifactKey: Guid(c91ce20d446e8b042b48d93499fff15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_696.asset using Guid(c91ce20d446e8b042b48d93499fff15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40ca18341dc530937d9460dd48d63cc1') in 0.0050857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.355986 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_705.asset
+  artifactKey: Guid(6751180150efc264f991ea4a13798d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_705.asset using Guid(6751180150efc264f991ea4a13798d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed15080253774eeb3141fb59be42aeab') in 0.0053617 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_712.asset
+  artifactKey: Guid(fdab13f5c5a686d43b920a6ce931632b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_712.asset using Guid(fdab13f5c5a686d43b920a6ce931632b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0873f7cff66e2bf1d00f9ee9f833337') in 0.0055641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_726.asset
+  artifactKey: Guid(86a9633ef29cd2c488fa3ce2f29a4a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_726.asset using Guid(86a9633ef29cd2c488fa3ce2f29a4a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05616013584b1724789a5a37f19ae363') in 0.0058371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_721.asset
+  artifactKey: Guid(0d6f18c7c7dcae240a67d64ffb80eb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_721.asset using Guid(0d6f18c7c7dcae240a67d64ffb80eb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2e811105a7cc259dbe65262f1efdf78') in 0.006944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.270144 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_737.asset
+  artifactKey: Guid(627a1571266d6e14585c929c3e7e1a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_737.asset using Guid(627a1571266d6e14585c929c3e7e1a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '881401bc9c5ef7c06dd4bf728aa536bb') in 0.0058973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_749.asset
+  artifactKey: Guid(3ab6b3a8e3477564b80e80dbc3d1b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_749.asset using Guid(3ab6b3a8e3477564b80e80dbc3d1b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '531caf1edfb1e8a159290174c4263733') in 0.0067208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.656469 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_793.asset
+  artifactKey: Guid(01e75a453bdcc4441b6c5c24c6c76bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_793.asset using Guid(01e75a453bdcc4441b6c5c24c6c76bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b3807840f10e272ed1e8d0011b9aa52f') in 0.0071889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009710 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_801.asset
+  artifactKey: Guid(0971bc2f7ab115a41af84a8ddf545ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_801.asset using Guid(0971bc2f7ab115a41af84a8ddf545ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b129a2d5d6b691a1130a2c9a1504a92a') in 0.0068201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_811.asset
+  artifactKey: Guid(4eee16c4596a26844ac749af8c543c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_811.asset using Guid(4eee16c4596a26844ac749af8c543c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3745ad308a36cdeda9eeaca112561412') in 0.0058346 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_818.asset
+  artifactKey: Guid(7767f99c11cf08942905112c13390fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_818.asset using Guid(7767f99c11cf08942905112c13390fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2173fca92a2e3b97cdcfeb8a51c35417') in 0.0057441 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.353457 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_825.asset
+  artifactKey: Guid(3b2ccec848085184d90d3deb83e9f41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_825.asset using Guid(3b2ccec848085184d90d3deb83e9f41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d5c7f8b57ec7c049fae88cbd462e39b') in 0.0114843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.317651 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_833.asset
+  artifactKey: Guid(fc5efc6b6c64ad644afc3d1c9cecdc97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_833.asset using Guid(fc5efc6b6c64ad644afc3d1c9cecdc97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f59cf654644eccbf3bea95bc81973fd6') in 0.0141047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_840.asset
+  artifactKey: Guid(fa7dee46e1c2f3447b718ec9412a85e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_840.asset using Guid(fa7dee46e1c2f3447b718ec9412a85e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9101c04a1e6c083a27e3a71a1fb166df') in 0.0058274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_855.asset
+  artifactKey: Guid(0202b3ec04e3e164fb737638c28a3791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_855.asset using Guid(0202b3ec04e3e164fb737638c28a3791) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9907b4a01ad55b6d95ea53a3964dad3d') in 0.0040981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.801461 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_857.asset
+  artifactKey: Guid(8ff9cfd0b94e89940898c314dafd13e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_857.asset using Guid(8ff9cfd0b94e89940898c314dafd13e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1809b9782c07403c7496007cb7141382') in 0.0231486 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_866.asset
+  artifactKey: Guid(f5803096b4317aa40a35f5c561d16e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_866.asset using Guid(f5803096b4317aa40a35f5c561d16e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4bc8af80fceeefcc50381cc887b495d') in 0.0123704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.306471 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_872.asset
+  artifactKey: Guid(d7b7aed9ec95fd34296d3b43bc9dede5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_872.asset using Guid(d7b7aed9ec95fd34296d3b43bc9dede5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00626e95cab6f3cee24ff7df7d13e0a3') in 0.0071492 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.029602 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_880.asset
+  artifactKey: Guid(ca822ccd7fc78f34e92704c25b6efd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_880.asset using Guid(ca822ccd7fc78f34e92704c25b6efd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b698fb506480d54dde759c0bd4d857b') in 0.0119139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.510874 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_890.asset
+  artifactKey: Guid(727a67b480c9d4942be94a6a756752f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_890.asset using Guid(727a67b480c9d4942be94a6a756752f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '909b3df0bd9538c9653b091d42619948') in 0.014313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.796633 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_898.asset
+  artifactKey: Guid(47022a0fcac13d84f9a2b5f4a78df251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_898.asset using Guid(47022a0fcac13d84f9a2b5f4a78df251) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf219dff05222bbf3602368fdd404262') in 0.0063874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022616 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_906.asset
+  artifactKey: Guid(d150235c81a72184fab42ba90c174751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_906.asset using Guid(d150235c81a72184fab42ba90c174751) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b3074715a912c658c0837dcc99310c9') in 0.0184141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.303183 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_953.asset
+  artifactKey: Guid(15395b8475cee4f4f9303def4b73f4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_953.asset using Guid(15395b8475cee4f4f9303def4b73f4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6faa1dee66ff21a8ff1e8dab2a8c0586') in 0.0175554 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.792473 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_955.asset
+  artifactKey: Guid(c2dbb440beb195f4a9a4dbf15b9edf1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_955.asset using Guid(c2dbb440beb195f4a9a4dbf15b9edf1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc507798ab970b7f6735bcb4de74a45f') in 0.0063336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012523 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_960.asset
+  artifactKey: Guid(9c42fef09d91f104893bd9ffbf62972b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_960.asset using Guid(9c42fef09d91f104893bd9ffbf62972b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b2d6423b7a4276315bdae76a29125778') in 0.0364967 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.024599 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_968.asset
+  artifactKey: Guid(6f1e680084c41e44ab6312c6acd6a1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_968.asset using Guid(6f1e680084c41e44ab6312c6acd6a1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c08ba4a9a47e91cb46b23678d26f039') in 0.0143255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026251 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_976.asset
+  artifactKey: Guid(53edf466e2b7edb42a02aadf6e8cbfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_976.asset using Guid(53edf466e2b7edb42a02aadf6e8cbfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc76c7b6a2e40e38c5fc6a17ba6090f3') in 0.009319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077271 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_984.asset
+  artifactKey: Guid(590a12a09e55eb44eaea81fbff4d2575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_984.asset using Guid(590a12a09e55eb44eaea81fbff4d2575) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4291bd0755a21ccae6ad17202afb20ac') in 0.0083872 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006237 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_992.asset
+  artifactKey: Guid(ef494dee7e6e8234c8db00ec6a21fbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_992.asset using Guid(ef494dee7e6e8234c8db00ec6a21fbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f9b7ce109073ec9365ec8874e31f44b') in 0.0059123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.985321 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1000.asset
+  artifactKey: Guid(10cb999843fbcfd45bcd121e89daf668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1000.asset using Guid(10cb999843fbcfd45bcd121e89daf668) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '290aff3c7eec5c0dd94fcec704abbffa') in 0.013289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.591246 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1007.asset
+  artifactKey: Guid(7cc9181ac8c444643b29c12312ea4b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1007.asset using Guid(7cc9181ac8c444643b29c12312ea4b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a604622120b293c3a4aa4a9c2c71392') in 0.0118083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019622 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1015.asset
+  artifactKey: Guid(4c84d32554abefd41999321e57a2c9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1015.asset using Guid(4c84d32554abefd41999321e57a2c9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1888cbd41add91c9ed373688da67ad1') in 0.0180359 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.872063 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1023.asset
+  artifactKey: Guid(ec9addbd1b6f42f4b959cb8d6b16533c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1023.asset using Guid(ec9addbd1b6f42f4b959cb8d6b16533c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '564eb737176d58b9b4be197aad447136') in 0.0123818 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1031.asset
+  artifactKey: Guid(041e361f07e97944ebc96f647a8f5cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1031.asset using Guid(041e361f07e97944ebc96f647a8f5cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3180f80ac43a1111efa95be240160bb') in 0.0075509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1040.asset
+  artifactKey: Guid(b1b2c65f298749b4aa7dd0920e611bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1040.asset using Guid(b1b2c65f298749b4aa7dd0920e611bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f58a07d0f6ac198c18b3674e1531228') in 0.0149297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.286256 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1046.asset
+  artifactKey: Guid(006e6f3f158badd4ea9c810140db5d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1046.asset using Guid(006e6f3f158badd4ea9c810140db5d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '853d612b126c3b6cfdf6c4abd46f5a3c') in 0.0081233 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.851420 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1050.asset
+  artifactKey: Guid(c46524de227ec6a458dc5be0a760146a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1050.asset using Guid(c46524de227ec6a458dc5be0a760146a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '660a403cdd3b21d59f6dde7784a0528c') in 0.0055169 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020768 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1058.asset
+  artifactKey: Guid(9669aecb4ac334347a82a8eed4532763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1058.asset using Guid(9669aecb4ac334347a82a8eed4532763) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38eae4dfd022149991c98de40d2e357e') in 0.013636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.354101 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1066.asset
+  artifactKey: Guid(e066d0b14e62ced4da0e2642b71e8578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1066.asset using Guid(e066d0b14e62ced4da0e2642b71e8578) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4af1b8d24d9ec523e7abc3058dc1539f') in 0.0197024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1074.asset
+  artifactKey: Guid(2c3f54c20bb12b14482f1f0c6b1898c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1074.asset using Guid(2c3f54c20bb12b14482f1f0c6b1898c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '585bb48f1a67369d5eb051fec721a18a') in 0.0053836 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.877017 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1077.asset
+  artifactKey: Guid(b33701e34307b6643a547cea72051723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1077.asset using Guid(b33701e34307b6643a547cea72051723) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '543ac945cc6fe8eb5dae56997f9f0ce2') in 0.0132461 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.426308 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1121.asset
+  artifactKey: Guid(4dc61f0ef695baf45a101968d85fb283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1121.asset using Guid(4dc61f0ef695baf45a101968d85fb283) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd666c1799f22bc393c28f3c16bf66f1a') in 0.0149566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010773 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1128.asset
+  artifactKey: Guid(4db83bbc3b488d542b9a435d9ae7d455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1128.asset using Guid(4db83bbc3b488d542b9a435d9ae7d455) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c625b5f9c5f9cd22d560f8f46e903cf') in 0.0127543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.424703 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1136.asset
+  artifactKey: Guid(a0380e05bcb8581489164ef6d34f7447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1136.asset using Guid(a0380e05bcb8581489164ef6d34f7447) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20be2f639fdabadd168c1e47261b176f') in 0.0131786 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.022508 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1225.asset
+  artifactKey: Guid(4ae2d95951c1abb46a3e2ca51a534cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1225.asset using Guid(4ae2d95951c1abb46a3e2ca51a534cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6dee142af31dedac0118afd62db4aa1c') in 0.0168657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.708518 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1231.asset
+  artifactKey: Guid(32d4bc327b557104fb54a4af13cd905d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1231.asset using Guid(32d4bc327b557104fb54a4af13cd905d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5c68f6a6828a5a317550594f2edc4d3') in 0.0183828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.806666 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1237.asset
+  artifactKey: Guid(78e80ef981f3757449b5b3ebcad5d361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1237.asset using Guid(78e80ef981f3757449b5b3ebcad5d361) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcffda23843dfc34507417bc01b2beb2') in 0.0081842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.287472 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1245.asset
+  artifactKey: Guid(ecbb4a8a7484cd4418909bf60a3c81e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1245.asset using Guid(ecbb4a8a7484cd4418909bf60a3c81e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64582f68ecd025d71e196c5c8795a93a') in 0.015261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.882189 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1249.asset
+  artifactKey: Guid(4ec101c697775674faf0ec03b5ef6b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1249.asset using Guid(4ec101c697775674faf0ec03b5ef6b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb42027d6e1ff22fac65f8158c82c79b') in 0.0117395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.533593 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1385.asset
+  artifactKey: Guid(b395b9c9138545d4385e4223786c32b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1385.asset using Guid(b395b9c9138545d4385e4223786c32b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1e2bf5666d39cb6d59e34546a35d3d1') in 0.0066676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1399.asset
+  artifactKey: Guid(4eb29e21e7acbc84fa5d0b9a0edb8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1399.asset using Guid(4eb29e21e7acbc84fa5d0b9a0edb8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '418b023e0ae8624da7910d4e5771b893') in 0.0166484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset/Map/TileMap/Object Tile/Objects_1401.asset
+  artifactKey: Guid(3f1b5271f3f628c4e9731359590ffdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Map/TileMap/Object Tile/Objects_1401.asset using Guid(3f1b5271f3f628c4e9731359590ffdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6142d37063b88136b7e3fd39f959354a') in 0.0102969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
