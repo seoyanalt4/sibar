@@ -20,6 +20,10 @@ public class PlayerShell : MonoBehaviour
     public string playerTagName = "Player";
     public string originTagName = "Crab";
 
+    [Header("껍질 착용 금지")]
+    public LayerMask obstacleMask;
+    public float obstacleCheckRadius = 0.15f;
+
     
     public bool startCrabTag = true;
 
@@ -92,12 +96,16 @@ public class PlayerShell : MonoBehaviour
 
     void TryPickupShell()
     {
+        if(Physics2D.OverlapCircle(transform.position, obstacleCheckRadius, obstacleMask) != null)
+        {
+            return;
+        }
+
         Collider2D col = Physics2D.OverlapCircle(transform.position, pickup, shellPickupMask);
         if (col == null) return;
 
         hasShell = true;
         ApplyShellCollision();
-        
         SetPlayerTag(false);
 
         if (droppedShell != null)
@@ -109,6 +117,7 @@ public class PlayerShell : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, pickup);
+        Gizmos.DrawWireSphere(transform.position, obstacleCheckRadius);
     }
 
 }
