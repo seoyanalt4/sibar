@@ -15,8 +15,10 @@ public class Timer : MonoBehaviour
     private float currentTime = 0f; 
 
     [Header("게임 오버")]
-    public GameObject gameOverUI; 
-    private bool isGameOver = false; 
+    public GameObject gameOverUI;
+    private bool isGameOver = false;
+
+    bool isInBubble = false;
 
     void Start()
     {
@@ -44,37 +46,45 @@ public class Timer : MonoBehaviour
         if (isGameOver) return;
 
         // 껍데기 상태 확인
-        bool isSafe = false;
-        if (playerShell != null) isSafe = playerShell.hasShell;
+        bool isSafe = (playerShell != null && playerShell.hasShell);
 
-        // 시간 계산 로직
-        if (isSafe)
+        if (!isInBubble)
         {
-            // 껍데기 안 = 회복 -> 게이지 감소 (위로 사라짐)
-            if (currentTime > 0)
+            if (isSafe)
             {
+                // 껍데기 안: 게이지 감소(회복)
                 currentTime -= Time.deltaTime * recoverySpeed;
-            }
-            if (currentTime < 0) currentTime = 0;
-        }
-        else
-        {
-            // 껍데기 밖 = 위험 -> 게이지 증가 (아래로 차오름)
-            if (currentTime < maxTime)
-            {
-                currentTime += Time.deltaTime;
+                if (currentTime < 0) currentTime = 0;
             }
             else
             {
-                TriggerGameOver();
+                // 껍데기 밖: 게이지 증가(질식)
+                currentTime += Time.deltaTime;
+
+                if (currentTime >= maxTime)
+                {
+                    currentTime = maxTime;
+                    TriggerGameOver();
+                }
             }
         }
+    
 
-        //  화면 반영
+        // 화면 반영 (버블이어도 UI는 갱신되게)
         if (gaugeSlider != null)
-        {
-            gaugeSlider.value = currentTime;
-        }
+        gaugeSlider.value = currentTime;
+    }
+
+
+    public void SetInBubble(bool value)
+    {
+        isInBubble = value;
+    }
+
+    public void AddAir(float amount)
+    {
+        currentTime -= amount;
+        currentTime = Mathf.Clamp(currentTime, 0, maxTime);
     }
 
     // 플레이어가 몬스터에게 맞았을 때 호출
